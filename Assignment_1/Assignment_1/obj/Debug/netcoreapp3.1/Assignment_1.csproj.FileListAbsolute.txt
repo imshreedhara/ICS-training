@@ -1,0 +1,14 @@
+D:\ICS DotNet Training\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Assignment_1.exe
+D:\ICS DotNet Training\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Assignment_1.deps.json
+D:\ICS DotNet Training\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Assignment_1.runtimeconfig.json
+D:\ICS DotNet Training\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Assignment_1.runtimeconfig.dev.json
+D:\ICS DotNet Training\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Assignment_1.dll
+D:\ICS DotNet Training\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Assignment_1.pdb
+D:\ICS DotNet Training\Assignment_1\Assignment_1\obj\Debug\netcoreapp3.1\Assignment_1.csproj.AssemblyReference.cache
+D:\ICS DotNet Training\Assignment_1\Assignment_1\obj\Debug\netcoreapp3.1\Assignment_1.GeneratedMSBuildEditorConfig.editorconfig
+D:\ICS DotNet Training\Assignment_1\Assignment_1\obj\Debug\netcoreapp3.1\Assignment_1.AssemblyInfoInputs.cache
+D:\ICS DotNet Training\Assignment_1\Assignment_1\obj\Debug\netcoreapp3.1\Assignment_1.AssemblyInfo.cs
+D:\ICS DotNet Training\Assignment_1\Assignment_1\obj\Debug\netcoreapp3.1\Assignment_1.csproj.CoreCompileInputs.cache
+D:\ICS DotNet Training\Assignment_1\Assignment_1\obj\Debug\netcoreapp3.1\Assignment_1.dll
+D:\ICS DotNet Training\Assignment_1\Assignment_1\obj\Debug\netcoreapp3.1\Assignment_1.pdb
+D:\ICS DotNet Training\Assignment_1\Assignment_1\obj\Debug\netcoreapp3.1\Assignment_1.genruntimeconfig.cache
