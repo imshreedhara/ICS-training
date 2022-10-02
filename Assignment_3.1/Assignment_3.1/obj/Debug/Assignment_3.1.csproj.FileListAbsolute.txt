@@ -1,0 +1,7 @@
+D:\Training Assignments\Assignment_3.1\Assignment_3.1\obj\Debug\Assignment_3.1.csproj.AssemblyReference.cache
+D:\Training Assignments\Assignment_3.1\Assignment_3.1\obj\Debug\Assignment_3.1.csproj.CoreCompileInputs.cache
+D:\Training Assignments\Assignment_3.1\Assignment_3.1\bin\Debug\Assignment_3.1.exe.config
+D:\Training Assignments\Assignment_3.1\Assignment_3.1\bin\Debug\Assignment_3.1.exe
+D:\Training Assignments\Assignment_3.1\Assignment_3.1\bin\Debug\Assignment_3.1.pdb
+D:\Training Assignments\Assignment_3.1\Assignment_3.1\obj\Debug\Assignment_3.1.exe
+D:\Training Assignments\Assignment_3.1\Assignment_3.1\obj\Debug\Assignment_3.1.pdb
