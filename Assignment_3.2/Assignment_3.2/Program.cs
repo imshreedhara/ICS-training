@@ -19,7 +19,10 @@ namespace Assignment_3._1
 		public int stuClass;
 		public int Semester;
 		public string branch;
-		public sum;
+		public int sum;
+		int[] marks = new int[5];
+		int avgMarks;
+		int count = 0;
 
 		static void Main(string[] args)
 		{
@@ -27,6 +30,7 @@ namespace Assignment_3._1
 			Console.WriteLine("Enter the marks of all 5 subjects of the student Shreedhara :");
 			st.GetMarks();
 			st.DisplayResult();
+			st.DisplayData();
 
 			Console.ReadKey();
 		}
@@ -38,25 +42,53 @@ namespace Assignment_3._1
 			stuClass = sClass;
 			Semester = sem;
 			branch = branchName;
+
 		}
 
 		public void GetMarks()          //to get the 5 subjects marks of student from d user 
 		{
-			int[] marks = new int[5];
-			for (int i = 0; i < 5; i++)
+			
+			for (int i = 0; i <marks.Length; i++)
 			{
 				marks[i] = Convert.ToInt32(Console.ReadLine());
-				int sum += arr[i];//
-
+				if (marks[i] < 35)
+				{
+					count++;
+				}
+				sum += marks[i];
+				
 			}
 
 		}
 
 		public void DisplayResult()     //to calculate d Avg of marks
 		{
+			int len = marks.Length;
+			int sum = 0;
+			for (int i = 0; i < marks.Length; i++)
+			{
+				sum += marks[i];
+			}
 
+			avgMarks = sum /len;
 		}
 
+		public void DisplayData()
+        {
+            Console.WriteLine("========================Student Details And Results=========================");
+			Console.WriteLine("Student Name :{0}\nStudent Roll No :{1}\nStudent class :{2}\nsemester :{3}\nbranch is :{4}",Name,RollNo,stuClass,Semester,branch);
 
+       
+            Console.WriteLine("total marks :{0}\nAvg Marks : {1}:",sum,avgMarks);
+
+			if (count > 0 && avgMarks < 50)
+			{
+				Console.WriteLine("Student {0} got failed ", Name);
+			}
+			else
+			{
+				Console.WriteLine("Student {0} got Passed ", Name);
+			}
+		}
 	}
 }

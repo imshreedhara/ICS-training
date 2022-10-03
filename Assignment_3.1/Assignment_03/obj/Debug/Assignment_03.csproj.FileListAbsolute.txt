@@ -5,3 +5,11 @@ D:\Training Assignments\Assignment_03\Assignment_03\bin\Debug\Assignment_03.exe
 D:\Training Assignments\Assignment_03\Assignment_03\bin\Debug\Assignment_03.pdb
 D:\Training Assignments\Assignment_03\Assignment_03\obj\Debug\Assignment_03.exe
 D:\Training Assignments\Assignment_03\Assignment_03\obj\Debug\Assignment_03.pdb
+D:\Training Assignments\Assignment_3.1\Assignment_03\obj\Debug\Assignment_03.csproj.AssemblyReference.cache
+D:\Training Assignments\Assignment_3.1\Assignment_03\obj\Debug\Assignment_03.csproj.SuggestedBindingRedirects.cache
+D:\Training Assignments\Assignment_3.1\Assignment_03\obj\Debug\Assignment_03.csproj.CoreCompileInputs.cache
+D:\Training Assignments\Assignment_3.1\Assignment_03\obj\Debug\Assignment_03.exe
+D:\Training Assignments\Assignment_3.1\Assignment_03\obj\Debug\Assignment_03.pdb
+D:\Training Assignments\Assignment_3.1\Assignment_03\bin\Debug\Assignment_03.exe.config
+D:\Training Assignments\Assignment_3.1\Assignment_03\bin\Debug\Assignment_03.exe
+D:\Training Assignments\Assignment_3.1\Assignment_03\bin\Debug\Assignment_03.pdb
