@@ -17,21 +17,50 @@ namespace Assignment_4_3
     public class Saledetails
     {
         public int Salesno;
-        int Productno;
+        int ProductNo;
         float Price;
-        DateTime dateofsale;
+        string DateOfSale;
         int Qty;
-        int TotalAmount;
+        float TotalAmount;
 
         static void Main(string[] args)
         {
+            Saledetails sd = new Saledetails();
 
+            Console.WriteLine("Enter the Qty : ");
+            sd.Qty = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the Price : ");
+            sd.Price=Convert.ToSingle(Console.ReadLine()); 
+
+            
+
+            Saledetails sd1 = new Saledetails(12, 90, 300, "10/06/2022");
+            sd.Sales(sd.Qty, sd.Price);
+            sd1.ShowSalesDetail();
+            Console.ReadKey();
         }
 
-        public void Sales(int Qty,int Price)
+        public void Sales(int Qty,float Price)
         {
             this.Qty = Qty;
             this.Price = Price;
+
+            TotalAmount = Qty * Price;
+        }
+
+        public Saledetails(int Salesno,int ProductNo, float Price, string DateOfSale)
+        {
+            this.Salesno = Salesno;
+            this.ProductNo = ProductNo;
+            this.Price = Price;
+            this.DateOfSale = DateOfSale;
+        }
+
+        public void ShowSalesDetail()
+        {
+            Console.WriteLine(" ------------------ Sales Detail are ------------------ ");
+            Console.WriteLine("Sales No :{0}\nProductNo : {1}\nPrice : {2}\nDateOfSale : {3}\nQty : {4}\nPrice : {5}",Salesno,ProductNo,Price,DateOfSale,Qty,Price);
         }
     }
 }
