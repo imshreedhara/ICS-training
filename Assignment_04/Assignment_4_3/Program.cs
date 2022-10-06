@@ -58,7 +58,7 @@ namespace Assignment_4_3
 
         public void ShowSalesDetail()
         {
-            Console.WriteLine(" ------------------ Sales Detail are ------------------ ");
+            Console.WriteLine(" -------------------- Sales Detail are -------------------- ");
             Console.WriteLine("Sales No :{0}\nProductNo : {1}\nPrice : {2}\nDateOfSale : {3}\nQty : {4}\nTotal Amount : {5}",Salesno,ProductNo,Price,DateOfSale,Qty,TotalAmount);
         }
     }
