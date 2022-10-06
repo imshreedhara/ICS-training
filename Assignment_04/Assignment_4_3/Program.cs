@@ -25,7 +25,7 @@ namespace Assignment_4_3
 
         static void Main(string[] args)
         {
-            Saledetails sd = new Saledetails();
+            Saledetails sd = new Saledetails(12, 90, 300, "10/06/2022");
 
             Console.WriteLine("Enter the Qty : ");
             sd.Qty = Convert.ToInt32(Console.ReadLine());
@@ -33,11 +33,10 @@ namespace Assignment_4_3
             Console.WriteLine("Enter the Price : ");
             sd.Price=Convert.ToSingle(Console.ReadLine()); 
 
-            
+            //Saledetails sd1 = new Saledetails();
 
-            Saledetails sd1 = new Saledetails(12, 90, 300, "10/06/2022");
             sd.Sales(sd.Qty, sd.Price);
-            sd1.ShowSalesDetail();
+            sd.ShowSalesDetail();
             Console.ReadKey();
         }
 
@@ -60,7 +59,7 @@ namespace Assignment_4_3
         public void ShowSalesDetail()
         {
             Console.WriteLine(" ------------------ Sales Detail are ------------------ ");
-            Console.WriteLine("Sales No :{0}\nProductNo : {1}\nPrice : {2}\nDateOfSale : {3}\nQty : {4}\nPrice : {5}",Salesno,ProductNo,Price,DateOfSale,Qty,Price);
+            Console.WriteLine("Sales No :{0}\nProductNo : {1}\nPrice : {2}\nDateOfSale : {3}\nQty : {4}\nTotal Amount : {5}",Salesno,ProductNo,Price,DateOfSale,Qty,TotalAmount);
         }
     }
 }
