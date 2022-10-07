@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 
 /*3.Create a class called Saledetails which has data members like Salesno, Productno, Price, dateofsale, Qty, TotalAmount
@@ -12,26 +8,26 @@ using System.Threading.Tasks;
 
     Hint : Use This pointer  */
 
-namespace Assignment_4_3
+namespace Assignment_04
 {
     public class Saledetails
     {
         public int Salesno;
         int ProductNo;
         float Price;
-        DateTime DateOfSale;
+        string DateOfSale;
         int Qty;
         float TotalAmount;
 
         static void Main(string[] args)
         {
-            Saledetails sd = new Saledetails(12, 90, 300, 2022/10/06;
+            Saledetails sd = new Saledetails(12, 90, 300,"06-10-2022");
 
             Console.WriteLine("Enter the Qty : ");
             sd.Qty = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Enter the Price : ");
-            sd.Price=Convert.ToSingle(Console.ReadLine()); 
+            sd.Price = Convert.ToSingle(Console.ReadLine());
 
             //Saledetails sd1 = new Saledetails();
 
@@ -40,7 +36,7 @@ namespace Assignment_4_3
             Console.ReadKey();
         }
 
-        public void Sales(int Qty,float Price)
+        public void Sales(int Qty, float Price)
         {
             this.Qty = Qty;
             this.Price = Price;
@@ -48,7 +44,7 @@ namespace Assignment_4_3
             TotalAmount = Qty * Price;
         }
 
-        public Saledetails(int Salesno,int ProductNo, float Price, string DateOfSale)
+        public Saledetails(int Salesno, int ProductNo, float Price, string DateOfSale)
         {
             this.Salesno = Salesno;
             this.ProductNo = ProductNo;
@@ -59,7 +55,7 @@ namespace Assignment_4_3
         public void ShowSalesDetail()
         {
             Console.WriteLine(" -------------------- Sales Detail are -------------------- ");
-            Console.WriteLine("Sales No :{0}\nProductNo : {1}\nPrice : {2}\nDateOfSale : {3}\nQty : {4}\nTotal Amount : {5}",Salesno,ProductNo,Price,DateOfSale,Qty,TotalAmount);
+            Console.WriteLine("Sales No :{0}\nProductNo : {1}\nPrice : {2}\nDateOfSale : {3}\nQty : {4}\nTotal Amount : {5}", Salesno, ProductNo, Price, DateOfSale, Qty, TotalAmount);
         }
     }
 }
