@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{57497723-9913-444B-B896-3135EA8C1734}</ProjectGuid>
+    <ProjectGuid>{FE7D778D-BDBE-407C-98A4-7F81722C40DC}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Assignment_04</RootNamespace>
     <AssemblyName>Assignment_04</AssemblyName>
@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Assignment_04.CountOccurrencesOfCharacter</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,7 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="F_nameNL_name.cs" />
+    <Compile Include="CountOccurrencesOfCharacter.cs" />
+    <Compile Include="Saledetails.cs" />
+    <Compile Include="Scholarship.cs" />
+    <Compile Include="Doctor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

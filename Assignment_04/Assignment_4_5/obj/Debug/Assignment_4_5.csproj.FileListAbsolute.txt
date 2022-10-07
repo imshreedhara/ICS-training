@@ -1,7 +1,0 @@
-D:\Training Assignments\Assignment_04\Assignment_4_5\obj\Debug\Assignment_4_5.csproj.AssemblyReference.cache
-D:\Training Assignments\Assignment_04\Assignment_4_5\obj\Debug\Assignment_4_5.csproj.CoreCompileInputs.cache
-D:\Training Assignments\Assignment_04\Assignment_4_5\bin\Debug\Assignment_4_5.exe.config
-D:\Training Assignments\Assignment_04\Assignment_4_5\bin\Debug\Assignment_4_5.exe
-D:\Training Assignments\Assignment_04\Assignment_4_5\bin\Debug\Assignment_4_5.pdb
-D:\Training Assignments\Assignment_04\Assignment_4_5\obj\Debug\Assignment_4_5.exe
-D:\Training Assignments\Assignment_04\Assignment_4_5\obj\Debug\Assignment_4_5.pdb
