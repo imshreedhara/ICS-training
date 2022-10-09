@@ -1,82 +1,45 @@
 
 
-Assignment-01
+
+================================================================================================
+Assignment-05
 =====================
-1. Write a C# Sharp program to accept two integers and check whether they are equal or not.  
-	Test Data :
-	Input 1st number: 5
-	Input 2nd number: 5
+1. Create an Abstract class Student with  Name, StudentId, Grade as members and also an abstract method Boolean Ispassed(grade) which 
+    takes grade as an input and checks whether student passed the course or not.  
 
-	Expected Output : 5 and 5 are equal 
+    Create 2 Sub classes Undergraduate and Graduate that inherits all members of the student and overrides Ispassed() method 
 
-2. Write a C# Sharp program to check whether a given number is positive or negative.  
-	Test Data : 14
-	Expected Output : 14 is a positive number
- 
-3. Write a C# Sharp program that takes two numbers as input and perform an operation (+,-,*,/) on them and displays the result of that operation.  Test Data
-	Input first number: 20
-	Input operation: -
-	Input second number: 12
-	Expected Output : 20 - 12 = 8
+    For the UnderGrad class, if the grade is above 70.0, then isPassed returns true, otherwise it returns false. 
+    For the Grad class, if the grade is above 80.0, then isPassed returns true, otherwise returns false.
+------------------------------------------
 
-4.Write a program which accepts marks of 5 students for C#,HTML and Sql (3 subjects),calculates the average and prints result as passed or failed
-	If avg < 50 then failed else passed. 
+2. Create an console application to book train tickets. Create a Passanger class with (Name, Age) and write a function called 
+   TicketBooking(int no_of_tickets) that takes no.of tickets to be booked. If the no of tickets is > 2 per booking, 
+   raise an user defined exception, and print "cannot book more than 2 tickets". Else Print  "Ticket Booked Successfully". 
+   Add a Test class to call TicketBooking method by accepting all required details.
 
-5.Write a program in C# to display temperature in Celsius. Accept the temperature in Fahrenheit.
+------------------------------------------
+3.
+  I. Create a class library Project called Concession. Write a method called CalculateConcession(int age)  that takes age 
+     as an input and calculates concession for travel as below:
 
-===============================================================================================================================================================
+	If age<=5 then “Little Champs- Free Ticket” should be displayed
+	If age >60 then calculate 30% concession on the totalfare(Which is a constant Eg:500/-) and Display “ Senior Citizen” + Calculated Fare
+	Else “Print Ticket Booked” + Fare. 
 
-Assignment-02
-==================
- Arrays 
+   II. Create a Console application with a Class called Program which has int TotalFare as Constant, Name, Age.  Accept Name, Age from the user and 
+      call the CalculateConcession() function
 
-  1. Write a  Program to assign integer values to an array and then print the following
-	a. Average value of Array elements
-	b. Minimum and Maximum value in an array 
-    
-  2.Write a program in C# to accept ten marks and display the following
-	a.Total
-	b.Average
-	c.Minimum marks
-	d.Maximum marks
-	e.Display marks in ascending order
-	f.Display marks in descending order
+      (Hint : Add required references)
+----------------------------------------------------
+
+4. Create an Interface IStudent with int StudentId and string Name as Properties, void ShowDetails() as its method.
+
+   Create 2 classes Dayscholar and Resident that implements the interface Properties and Methods. ShowDetails() should show 
+   DaysScholar details and Resident Details accordingly.
 
 
-  3.Strings Assignment
-	1.Write a program in C# to accept a word from the user and display the length of it.
-	2.Write a program in C# to accept a word from the user and display the reverse of it. 
-	3.Write a program in C# to accept two words from user and find out if they are same. 
-	4.Write a program in C# to accept a word and to find out whether the given word is a palindrome or not.
-===============================================================================================================================================================
-
-
-Assignment-03
-===================
-1. Create a class called Accounts which has data members like Account no, Customer name, Account type, Transaction type (d/w), amount, balance
-	D->Deposit
-	W->Withdrawal
-
-	-write a function that updates the balance depending upon the transaction type
-
-	-If transaction type is deposit call the credit(int amount) function and update balance
-	-If transaction type is withdraw call debit(int amt)function and update balance
-
-	-Pass the other information like Acount no,name,acc type through constructor
-	-call the show data method to display the values.
-
-
-2. Create a class called student which has data members like rollno, name, class, Semester, branch, int [] marks=new int marks [5] (marks of 5 subjects )
-
-	-Pass the details of student like rollno, name, class, SEM, branch in constructor
-	-For marks write a method called GetMarks() and give marks for all 5 subjects
-	-Write a method called displayresult, which should calculate the average marks
-	-If marks of any one subject is less than 35 print result as failed
-	-If marks of all subject is >35 but average is < 50 then also print result as failed
-	-If avg > 50 then print result as passed.
-	-Write a DisplayData() method to display all values.
-
-======================================================================================================================================================
+===============================================================================================================================================
 
 Assignment-04
 ===================
@@ -113,12 +76,9 @@ Strengthning OOPS:
 
 6. Create a Class called Doctor with RegnNo, Name, Feescharged as Private members. Allow values to be set and also to display the same.
 
+==========================================================================================================================================
 
-
-
-========================================================================================================================================================
-
-Hands On Questions
+Hands On Questions for assign-04
 ==========================
 1. Create an Employee class with Empid int, Empname string, Salary float. Pass values to the members through Constructor.
 
@@ -128,3 +88,82 @@ Hands On Questions
 2. Write a Method called ShowEmployee()  in the Parent class that displays employee details
 
 3. Override the ShowEmployee() in the child class and change the code to display Partime Employee Details with wages
+
+=====================================================================================================================================
+
+Assignment-03
+===================
+1. Create a class called Accounts which has data members like Account no, Customer name, Account type, Transaction type (d/w), amount, balance
+	D->Deposit
+	W->Withdrawal
+
+	-write a function that updates the balance depending upon the transaction type
+
+	-If transaction type is deposit call the credit(int amount) function and update balance
+	-If transaction type is withdraw call debit(int amt)function and update balance
+
+	-Pass the other information like Acount no,name,acc type through constructor
+	-call the show data method to display the values.
+
+
+2. Create a class called student which has data members like rollno, name, class, Semester, branch, int [] marks=new int marks [5] (marks of 5 subjects )
+
+	-Pass the details of student like rollno, name, class, SEM, branch in constructor
+	-For marks write a method called GetMarks() and give marks for all 5 subjects
+	-Write a method called displayresult, which should calculate the average marks
+	-If marks of any one subject is less than 35 print result as failed
+	-If marks of all subject is >35 but average is < 50 then also print result as failed
+	-If avg > 50 then print result as passed.
+	-Write a DisplayData() method to display all values.
+
+======================================================================================================================================
+
+Assignment-02
+==================
+ Arrays 
+
+  1. Write a  Program to assign integer values to an array and then print the following
+	a. Average value of Array elements
+	b. Minimum and Maximum value in an array 
+    
+  2.Write a program in C# to accept ten marks and display the following
+	a.Total
+	b.Average
+	c.Minimum marks
+	d.Maximum marks
+	e.Display marks in ascending order
+	f.Display marks in descending order
+
+
+  3.Strings Assignment
+	1.Write a program in C# to accept a word from the user and display the length of it.
+	2.Write a program in C# to accept a word from the user and display the reverse of it. 
+	3.Write a program in C# to accept two words from user and find out if they are same. 
+	4.Write a program in C# to accept a word and to find out whether the given word is a palindrome or not.
+===============================================================================================================================================================
+
+Assignment-01
+=====================
+1. Write a C# Sharp program to accept two integers and check whether they are equal or not.  
+	Test Data :
+	Input 1st number: 5
+	Input 2nd number: 5
+
+	Expected Output : 5 and 5 are equal 
+
+2. Write a C# Sharp program to check whether a given number is positive or negative.  
+	Test Data : 14
+	Expected Output : 14 is a positive number
+ 
+3. Write a C# Sharp program that takes two numbers as input and perform an operation (+,-,*,/) on them and displays the result of that operation.  Test Data
+	Input first number: 20
+	Input operation: -
+	Input second number: 12
+	Expected Output : 20 - 12 = 8
+
+4.Write a program which accepts marks of 5 students for C#,HTML and Sql (3 subjects),calculates the average and prints result as passed or failed
+	If avg < 50 then failed else passed. 
+
+5.Write a program in C# to display temperature in Celsius. Accept the temperature in Fahrenheit.
+
+===============================================================================================================================================================

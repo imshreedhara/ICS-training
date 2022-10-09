@@ -1,0 +1,7 @@
+D:\Assignment_05\Qn_01\bin\Debug\Qn_01.exe.config
+D:\Assignment_05\Qn_01\bin\Debug\Qn_01.exe
+D:\Assignment_05\Qn_01\bin\Debug\Qn_01.pdb
+D:\Assignment_05\Qn_01\obj\Debug\Qn_01.csproj.AssemblyReference.cache
+D:\Assignment_05\Qn_01\obj\Debug\Qn_01.csproj.CoreCompileInputs.cache
+D:\Assignment_05\Qn_01\obj\Debug\Qn_01.exe
+D:\Assignment_05\Qn_01\obj\Debug\Qn_01.pdb
