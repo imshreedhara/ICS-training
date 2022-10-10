@@ -6,9 +6,9 @@ namespace Assignment_04
 {
     class Doctor
     {
-        private int RegnNo { get; set; }
-        private string Name { get; set; }
-        private int FeesCharged { get; set; }
+        int RegnNo { get; set; }
+        string Name { get; set; }
+        int FeesCharged { get; set; }
 
         public int _RegNo
         {

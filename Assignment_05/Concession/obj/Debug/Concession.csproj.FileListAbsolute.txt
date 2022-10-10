@@ -1,6 +1,0 @@
-D:\Assignment_05\Concession\obj\Debug\Concession.csproj.AssemblyReference.cache
-D:\Assignment_05\Concession\obj\Debug\Concession.csproj.CoreCompileInputs.cache
-D:\Assignment_05\Concession\bin\Debug\Concession.dll
-D:\Assignment_05\Concession\bin\Debug\Concession.pdb
-D:\Assignment_05\Concession\obj\Debug\Concession.dll
-D:\Assignment_05\Concession\obj\Debug\Concession.pdb

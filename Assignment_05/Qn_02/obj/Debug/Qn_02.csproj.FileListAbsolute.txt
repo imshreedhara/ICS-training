@@ -1,7 +1,0 @@
-D:\Assignment_05\Qn_02\bin\Debug\Qn_02.exe.config
-D:\Assignment_05\Qn_02\bin\Debug\Qn_02.exe
-D:\Assignment_05\Qn_02\bin\Debug\Qn_02.pdb
-D:\Assignment_05\Qn_02\obj\Debug\Qn_02.csproj.AssemblyReference.cache
-D:\Assignment_05\Qn_02\obj\Debug\Qn_02.csproj.CoreCompileInputs.cache
-D:\Assignment_05\Qn_02\obj\Debug\Qn_02.exe
-D:\Assignment_05\Qn_02\obj\Debug\Qn_02.pdb

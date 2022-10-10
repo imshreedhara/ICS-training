@@ -1,0 +1,5 @@
+D:\Training Assignments\Assignment_05\Consession\bin\Debug\Consession.dll
+D:\Training Assignments\Assignment_05\Consession\bin\Debug\Consession.pdb
+D:\Training Assignments\Assignment_05\Consession\obj\Debug\Consession.csproj.CoreCompileInputs.cache
+D:\Training Assignments\Assignment_05\Consession\obj\Debug\Consession.dll
+D:\Training Assignments\Assignment_05\Consession\obj\Debug\Consession.pdb
