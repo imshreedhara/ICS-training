@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ICS DotNet Training Assignments\\Assignment_1\\Assignment_1\\Assignment_1.csproj": {}
+    "D:\\Training Assignments\\Assignment_01\\Assignment_1\\Assignment_1.csproj": {}
   },
   "projects": {
-    "D:\\ICS DotNet Training Assignments\\Assignment_1\\Assignment_1\\Assignment_1.csproj": {
+    "D:\\Training Assignments\\Assignment_01\\Assignment_1\\Assignment_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ICS DotNet Training Assignments\\Assignment_1\\Assignment_1\\Assignment_1.csproj",
+        "projectUniqueName": "D:\\Training Assignments\\Assignment_01\\Assignment_1\\Assignment_1.csproj",
         "projectName": "Assignment_1",
-        "projectPath": "D:\\ICS DotNet Training Assignments\\Assignment_1\\Assignment_1\\Assignment_1.csproj",
+        "projectPath": "D:\\Training Assignments\\Assignment_01\\Assignment_1\\Assignment_1.csproj",
         "packagesPath": "C:\\Users\\shreedharar\\.nuget\\packages\\",
-        "outputPath": "D:\\ICS DotNet Training Assignments\\Assignment_1\\Assignment_1\\obj\\",
+        "outputPath": "D:\\Training Assignments\\Assignment_01\\Assignment_1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\shreedharar\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,33 +1,29 @@
 ﻿using System;
+
 namespace Assignment_1
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //EqualOrNot();
+            EqualOrNot();
 
             NumIsPositiveOrNot();
 
-            //Airthmatic_Operation();
+            Airthmatic_Operation();
 
-            //AirthmaticOperation();
+            ForStudentResult();
 
-            //ForStudentResult();
-
-            //TempConversionExample();
+            TempConversionExample();
 
             Console.ReadKey();
         }
 
 
-      
-        /*  1.Write a C# Sharp program to accept two integers and check whether they are equal or not
-            Test Data :
-            Input 1st number: 5
-            Input 2nd number: 5
-            Expected Output : 5 and 5 are equal*/
-
+        /* Write a C# Sharp program to accept two integers and check whether they are equal or not
+           Test Data :  Input 1st number: 5
+                        Input 2nd number: 5
+                        Expected Output : 5 and 5 are equal  */
 
         static void EqualOrNot()
         {
@@ -45,42 +41,42 @@ namespace Assignment_1
         }
 
 
-        //Write a C# Sharp program to check whether a given number is positive or negative.  
-	    //Test Data : 14
-	    //Expected Output : 14 is a positive number
+        /* Write a C# Sharp program to check whether a given number is positive or negative.  
+                Test Data : 14       Expected Output : 14 is a positive number  */
 
         static void NumIsPositiveOrNot()
         {
-            Console.WriteLine("Enter a number");
-            int num = Convert.ToInt32(Console.ReadLine());
+            int number = 14;
 
-            if(num>=0)
-                Console.WriteLine("Given number is Positive");
-
+            if (number % 2 == 0)
+            {
+                Console.WriteLine("The given Number {0} is Even", number);
+            }
             else
-                Console.WriteLine("Given number is Negative");
+            {
+                Console.WriteLine("The given Number {0} is Even", number);
+            }
         }
 
 
-        /* 3. Write a C# Sharp program that takes two numbers as input and perform an operation (+,-,*,/) on them and displays the result of that operation. 
+        /* Write a C# Sharp program that takes two numbers as input and perform an operation (+,-,*,/) on them and displays the result of that operation.
+               Test Data
+               Input first number: 20
+               Input operation: -
+               Input second number: 12
+               Expected Output : 20 - 12 = 8      */
 
-                Test Data
-                Input first number: 20
-                Input operation: -
-                Input second number: 12
-                Expected Output : 20 - 12 = 8      */
-
-        static void AirthmaticOperation()
+        static void Airthmatic_Operation()
         {
             int option;
             int n1 = 20;
             int n2 = 12;
 
-            Console.WriteLine("Option\t\tAction\n=========================");
-            Console.WriteLine("1\t\tAddition");
-            Console.WriteLine("2\t\tSubstract");
-            Console.WriteLine("3\t\tMultiplication");
-            Console.WriteLine("3\t\tDivision");
+            Console.WriteLine("Option\t Action\n=========================");
+            Console.WriteLine("  1 \t Addition");
+            Console.WriteLine("  2 \t Substract");
+            Console.WriteLine("  3 \t Multiplication");
+            Console.WriteLine("  4 \t Division");
 
             Console.WriteLine("Refer above menu and enter your option");
             option = Convert.ToInt32(Console.ReadLine());
@@ -88,11 +84,11 @@ namespace Assignment_1
             switch (option)
             {
                 case 1:
-                    Console.WriteLine(n1+n2);
+                    Console.WriteLine(n1 + n2);
                     break;
 
                 case 2:
-                    Console.WriteLine(n1-n2);
+                    Console.WriteLine(n1 - n2);
                     break;
 
                 case 3:
@@ -107,13 +103,12 @@ namespace Assignment_1
                     Console.WriteLine("Invalid option");
                     break;
             }
-
         }
 
 
-        /*4.Write a program which accepts marks of 5 students for C#,HTML and Sql (3 subjects),
-            calculates the average and prints result as passed or failed
-            If avg< 50 then failed else passed   */
+        /* Write a program which accepts marks of 5 students for C#,HTML and Sql (3 subjects),
+           calculates the average and prints result as passed or failed 
+           If avg< 50 then failed else passed   */
 
         static void ForStudentResult()
         {
@@ -137,22 +132,19 @@ namespace Assignment_1
 
                     if (total < 50)
                     {
-                        Console.WriteLine("total  mark for student " + i + " is : " + total);
-                        Console.WriteLine("student {0} is Failed", i);
+                        Console.WriteLine("Total  mark of student " + i + " is : " + total);
+                        Console.WriteLine("Student {0} got Failed", i);
                     }
                     else
                     {
-                        Console.WriteLine("total  mark for student " + i + " is : " + total);
-                        Console.WriteLine("student {0} is passed", i);
+                        Console.WriteLine("total  mark of student " + i + " is : " + total);
+                        Console.WriteLine("student {0} got passed", i);
                     }
-
                 }
-
             }
-
         }
 
-        //5.Write a program in C# to display temperature in Celsius. Accept the temperature in Fahrenheit.
+        // Write a program in C# to display temperature in Celsius. Accept the temperature in Fahrenheit.
 
         static void TempConversionExample()
         {
@@ -167,4 +159,3 @@ namespace Assignment_1
         }
     }
 }
-
