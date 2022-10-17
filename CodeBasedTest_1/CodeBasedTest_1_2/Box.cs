@@ -10,10 +10,27 @@ using System.Threading.Tasks;
 
 namespace CodeBasedTest_1_2
 {
-    class Program
+    class Box
     {
+        public float length = 10;
+        public float breadth = 5;
+
+        public static void Box_1()
+        {
+
+        }
+
+        public static void Box_2()
+        {
+
+        }
+
         static void Main(string[] args)
         {
+            MulticastDelegate Box3 = new MulticastDelegate(Box3);
+            AddBoxes += Box_1;
+            AddBoxes += Box_2;
+
         }
     }
 }
