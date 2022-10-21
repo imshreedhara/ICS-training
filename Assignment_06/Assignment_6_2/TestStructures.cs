@@ -1,6 +1,4 @@
-﻿using System;
-
-/*Qn.2
+﻿/*Qn.2
  * Create a structure 
    struct Books 
    private string title;
@@ -11,6 +9,8 @@
 Include 2 methods called GetValues() and ShowValues() to accept and display details.
 
 create a Class called TestStructures that invokes the above methods of the structure to accept and display the details of the book */
+
+using System;
 
 namespace Assignment_6_2
 {

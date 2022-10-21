@@ -1,11 +1,24 @@
 
-====================================================================
+
+=======================================================================================================
+Code Based Test 1   (17/10/2022)
+=======================
+1. Write a program to find the Sum and the Average points scored by the teams in the IPL. Create a Class called Cricket that has a 
+   function called Pointscalculation(int no_of_matches) that takes no.of matches as input and accepts that many scores from the user. 
+   The function should then display the Average and Sum of the scores.
+  
+   (Hint : Use Collection)
+
+2. Write a class Box that has Length and breadth as its members. Write a function that adds 2 box objects and stores in the 3rd.
+   Create a Test class to execute the above.
+===================================================================================================================================
+
 Assignment-06
 =====================
 Indexers
 --------------
-1. Create a class called Books with BookName and AuthorName members. Instantiate the class through constructor and also write a method Display() to 
-   display the details. Create an Indexer of Books Object to store 5 books in a class called BookShelf.
+1. Create a class called Books with BookName and AuthorName members. Instantiate the class through constructor and also 
+   write a method Display() to display the details. Create an Indexer of Books Object to store 5 books in a class called BookShelf.
  
    Using the indexer method assign values to the books and display the same.
 

@@ -1,0 +1,7 @@
+D:\Training Assignments\Assignment_07_LINQ\Assignment_07_LINQ\obj\Debug\Assignment_07_LINQ.csproj.AssemblyReference.cache
+D:\Training Assignments\Assignment_07_LINQ\Assignment_07_LINQ\obj\Debug\Assignment_07_LINQ.csproj.CoreCompileInputs.cache
+D:\Training Assignments\Assignment_07_LINQ\Assignment_07_LINQ\bin\Debug\Assignment_07_LINQ.exe.config
+D:\Training Assignments\Assignment_07_LINQ\Assignment_07_LINQ\bin\Debug\Assignment_07_LINQ.exe
+D:\Training Assignments\Assignment_07_LINQ\Assignment_07_LINQ\bin\Debug\Assignment_07_LINQ.pdb
+D:\Training Assignments\Assignment_07_LINQ\Assignment_07_LINQ\obj\Debug\Assignment_07_LINQ.exe
+D:\Training Assignments\Assignment_07_LINQ\Assignment_07_LINQ\obj\Debug\Assignment_07_LINQ.pdb
