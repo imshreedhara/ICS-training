@@ -5,3 +5,10 @@ D:\Training Assignments\Assignment_07_LINQ\Assignment_07_LINQ\bin\Debug\Assignme
 D:\Training Assignments\Assignment_07_LINQ\Assignment_07_LINQ\bin\Debug\Assignment_07_LINQ.pdb
 D:\Training Assignments\Assignment_07_LINQ\Assignment_07_LINQ\obj\Debug\Assignment_07_LINQ.exe
 D:\Training Assignments\Assignment_07_LINQ\Assignment_07_LINQ\obj\Debug\Assignment_07_LINQ.pdb
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\Assignment_07_LINQ\Assignment_07_LINQ\obj\Debug\Assignment_07_LINQ.csproj.AssemblyReference.cache
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\Assignment_07_LINQ\Assignment_07_LINQ\obj\Debug\Assignment_07_LINQ.csproj.CoreCompileInputs.cache
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\Assignment_07_LINQ\Assignment_07_LINQ\obj\Debug\Assignment_07_LINQ.exe
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\Assignment_07_LINQ\Assignment_07_LINQ\obj\Debug\Assignment_07_LINQ.pdb
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\Assignment_07_LINQ\Assignment_07_LINQ\bin\Debug\Assignment_07_LINQ.exe.config
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\Assignment_07_LINQ\Assignment_07_LINQ\bin\Debug\Assignment_07_LINQ.exe
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\Assignment_07_LINQ\Assignment_07_LINQ\bin\Debug\Assignment_07_LINQ.pdb

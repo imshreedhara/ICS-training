@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Assignment_07_LINQ
 {
@@ -110,9 +108,7 @@ namespace Assignment_07_LINQ
 
             #endregion
 
-
             #region
-
             //  e. Display a list of all the employee who have joined before 1/1/2015
 
             //var emp4 = from doj in Employee.GetEmployee()
@@ -124,9 +120,7 @@ namespace Assignment_07_LINQ
             //    Console.WriteLine("EmployeeID : {0} FirstName : {1}  LastName : {2}  title : {3}  city : {4}  DOB : {5}  DOJ : {6}",
             //                e4.EmployeeID, e4.FirstName, e4.LastName, e4.title, e4.city, e4.DOB.ToShortDateString(), e4.DOJ.ToShortDateString());
             //}
-
             #endregion
-
 
             #region
             //  f. Display a list of all the employee whose date of birth is after 1/1/1990
@@ -140,12 +134,9 @@ namespace Assignment_07_LINQ
             //    Console.WriteLine("EmployeeID : {0} FirstName : {1}  LastName : {2}  title : {3}  city : {4}  DOB : {5}",
             //                e5.EmployeeID, e5.FirstName, e5.LastName, e5.title, e5.city, e5.DOB.ToShortDateString());
             //}
-
             #endregion
 
-
             #region
-
             //  g.Display a list of all the employee whose designation is Consultant and Associate
 
             //var emp6 = from des in Employee.GetEmployee()
@@ -157,7 +148,6 @@ namespace Assignment_07_LINQ
             //    Console.WriteLine("EmployeeID : {0} FirstName : {1}  LastName : {2}  title : {3}",
             //                         e6.EmployeeID, e6.FirstName, e6.LastName, e6.title);
             //}
-
             #endregion
 
             #region
@@ -189,19 +179,56 @@ namespace Assignment_07_LINQ
             Console.WriteLine("The Highest employee id from the list is : {0}",emp9);
             #endregion
 
+            #region
             //k. Display total number of employee who have joined after 1/1/2015
-            var emp10 = (from doj in Employee.GetEmployee()
-                         where doj.DOJ > DateTime.Parse("01/01/2015")
-                         select doj).Count();
-            foreach(var e10 in emp10)
+            //var emp10 = (from doj in Employee.GetEmployee()
+            //             where doj.DOJ > DateTime.Parse("01/01/2015")
+            //             select doj).Count();
+            //foreach(var e10 in emp10)
+            //{
+            //    Console.WriteLine("EmployeeID : {0} FirstName : {1}  LastName : {2}  title : {3}  city : {4}  DOJ : {5}",
+            //                e10.EmployeeID, e10.FirstName, e10.LastName, e10.title, e10.city, e10.DOJ.ToShortDateString());
+            //}
+            #endregion
+
+            #region
+
+            //  l. Display total number of employee whose designation is not “Associate”
+            //var emp11 = from AssoEmp in Employee.GetEmployee()
+            //            where AssoEmp.title != "Associate"
+            //            select AssoEmp;
+            //foreach(var e11 in emp11)
+            //{
+            //    Console.WriteLine("EmployeeID : {0} FirstName : {1}  LastName : {2}  title : {3}",
+            //                e11.EmployeeID, e11.FirstName, e11.LastName, e11.title);
+            //}
+
+            #endregion
+
+            // m. Display total number of employee based on city
+
+            var emp12 = from Emp_City in Employee.GetEmployee()
+                        where Emp_City.city.OrderBy(a,Emp_City)
+                        select Emp_City;
+
+            foreach(var e12 in emp12)
             {
-                Console.WriteLine("EmployeeID : {0} FirstName : {1}  LastName : {2}  title : {3}  city : {4}  DOJ : {5}",
-                            e10.EmployeeID, e10.FirstName, e10.LastName, e10.title, e10.city, e10.DOJ.ToShortDateString());
+                Console.WriteLine("EmployeeID : {0} FirstName : {1}  LastName : {2}  city : {3}",
+                           e12.EmployeeID, e12.FirstName, e12.LastName, e12.city);
             }
 
 
 
 
+
+            // n. Display total number of employee based on city and title
+
+
+
+
+
+
+            // o. Display total number of employee who is youngest in the list 
 
 
 
@@ -211,10 +238,36 @@ namespace Assignment_07_LINQ
 }
 
 
+/* 
+  1. Create a console application and add class named Employee with following field.
+           Employee Class
+           EmployeeID (Integer)
+           FirstName(String)
+           LastName(String)
+           title(String)
+           DOB(Date)
+           DOJ(Date)
+           city(String)                       
+
+
+// 2. Create a Generic List Collection empList and populate it with the following records.
+
+/*  EmployeeID   FirstName   LastName      title             DOB                DOJ             city
+     1001        Malcolm     Daruwalla    Manager         16/11/1984         08/06/2011        Mumbai
+     1002        Asdin       Asdin       AsstManager      20/08/1984         07/07/2012        Mumbai
+     1003        Madhavi     Oza         Consultant       14/11/1987         12/04/2015        Pune
+     1004        Saba        Shaikh      SE               03/06/1990         02/02/2016        Pune
+     1005        Nazia       Shaikh      SE               08/03/1991         02/02/2016        Mumbai
+     1006        Amit        Pathak      Consultant       07/11/1989         08/08/2014        Chennai
+     1007        Vijay       Natrajan    Consultant       02/12/1989         01/06/2015        Mumbai
+     1008        Rahul       Dubey       Associate        11/11/1993         06/11/2014        Chennai
+     1009        Suresh      Mistry      Associate        12/08/1992         03/12/2014        Chennai
+     1010        Sumit       Shah        Manager          12/04/1991         02/01/2016        Pune             
 
 
 
-/*
+// 3. Now once the collection is created write down and execute the LINQ queries for collection as follows :
+
 a. Display detail of all the employee
 b. Display details of all the employee whose location is not Mumbai
 c. Display details of all the employee whose title is AsstManager
@@ -229,31 +282,4 @@ k. Display total number of employee who have joined after 1/1/2015
 l. Display total number of employee whose designation is not “Associate”
 m. Display total number of employee based on city
 n. Display total number of employee based on city and title
-o. Display total number of employee who is youngest in the list   */
-
-
-
-
-
-/*  EmployeeID   FirstName   LastName      title             DOB                DOJ             city
-     1001        Malcolm     Daruwalla    Manager         16/11/1984         08/06/2011        Mumbai
-     1002        Asdin       Asdin       AsstManager      20/08/1984         07/07/2012        Mumbai
-     1003        Madhavi     Oza         Consultant       14/11/1987         12/04/2015        Pune
-     1004        Saba        Shaikh      SE               03/06/1990         02/02/2016        Pune
-     1005        Nazia       Shaikh      SE               08/03/1991         02/02/2016        Mumbai
-     1006        Amit        Pathak      Consultant       07/11/1989         08/08/2014        Chennai
-     1007        Vijay       Natrajan    Consultant       02/12/1989         01/06/2015        Mumbai
-     1008        Rahul       Dubey       Associate        11/11/1993         06/11/2014        Chennai
-     1009        Suresh      Mistry      Associate        12/08/1992         03/12/2014        Chennai
-     1010        Sumit       Shah        Manager          12/04/1991         02/01/2016        Pune             */
-
-
-/* 1.Create a console application and add class named Employee with following field.
-Employee Class
-EmployeeID (Integer)
-FirstName(String)
-LastName(String)
-title(String)
-DOB(Date)
-DOJ(Date)
-city(String) */
+o. Display total number of employee who is youngest in the list              */
