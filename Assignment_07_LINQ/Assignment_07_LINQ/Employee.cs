@@ -90,6 +90,7 @@ namespace Assignment_07_LINQ
             Console.WriteLine("Employee details are : ");
             var emp = from allEmplees in Employee.GetEmployee()
                       select allEmplees;
+
             Console.WriteLine("Displaying details of all the employees");
             Console.WriteLine("Emp ID \t  FirstName \t  LastName  \t  title  \t  City  \t   DOB \t   DOJ");
 
@@ -107,9 +108,9 @@ namespace Assignment_07_LINQ
                       select mumbaiEmp;
 
             Console.WriteLine("Displaying details of all the employee whose location is not Mumbai");
+
             foreach (var e1 in emp1)
             {
-                //Console.WriteLine(e1.EmployeeID  + e1.FirstName + e1.LastName + e1.title + e1.city + e1.DOB.ToShortDateString() + e1.DOJ.ToShortDateString());
                 Console.WriteLine("EmployeeID : {0} FirstName : {1}  LastName : {2}    title : {3}  city : {4}  DOB : {5}  DOJ : {6}", e1.EmployeeID, e1.FirstName, e1.LastName, e1.title, e1.city, e1.DOB.ToShortDateString(), e1.DOJ.ToShortDateString());
             }
             #endregion
@@ -122,6 +123,7 @@ namespace Assignment_07_LINQ
                       select assmgr;
 
             Console.WriteLine("Displaying details of all the employee whose title is AsstManager");
+
             foreach (var e2 in emp2)
             {
                 Console.WriteLine("EmployeeID : {0} FirstName : {1}  LastName : {2}    title : {3}  city : {4}  DOB : {5}  DOJ : {6}", 
@@ -138,6 +140,7 @@ namespace Assignment_07_LINQ
                        select Last_Name;
 
             Console.WriteLine("Displaying details of all the employee whose Last Name start with S");
+
             foreach (var e3 in emp3)
             {
                 Console.WriteLine("EmployeeID : {0} FirstName : {1}  LastName : {2}  title : {3}  city : {4}  DOB : {5}  DOJ : {6}",
@@ -153,6 +156,7 @@ namespace Assignment_07_LINQ
                        select doj;
 
             Console.WriteLine("Display a list of all the employee who have joined before 01/01/2015");
+
             foreach (var e4 in emp4)
             {
                 Console.WriteLine("EmployeeID : {0} FirstName : {1}  LastName : {2}  title : {3}  city : {4}  DOB : {5}  DOJ : {6}",
@@ -168,6 +172,7 @@ namespace Assignment_07_LINQ
                        select dob;
 
             Console.WriteLine("Displaying a list of all the employee whose date of birth is after 01/01/1990");
+
             foreach (var e5 in emp5)
             {
                 Console.WriteLine("EmployeeID : {0} FirstName : {1}  LastName : {2}  title : {3}  city : {4}  DOB : {5}",
@@ -182,7 +187,8 @@ namespace Assignment_07_LINQ
                      where des.title == "Consultant" || des.title == "Associate"
                      select des;
 
-            Console.WriteLine("Displaying a list of all the employee whose designation is Consultant and Associate");           
+            Console.WriteLine("Displaying a list of all the employee whose designation is Consultant and Associate");  
+            
             foreach (var e6 in emp6)
             {
                 Console.WriteLine("EmployeeID : {0} FirstName : {1}  LastName : {2}  title : {3}",
@@ -195,8 +201,10 @@ namespace Assignment_07_LINQ
 
             var emp7 = (from EmpCount in Employee.GetEmployee()
                      select EmpCount.EmployeeID).Count();
+
             Console.WriteLine("Displaying total number of employees");
             Console.WriteLine("The total Count of Employee is : {0}", emp7);
+
             #endregion
 
             #region
@@ -222,6 +230,7 @@ namespace Assignment_07_LINQ
                       select MaxEmpId.EmployeeID).Max();
 
             Console.WriteLine("Display highest employee id from the list");
+
             Console.WriteLine("The Highest employee id from the list is : {0}", emp9);
             #endregion
 
@@ -233,6 +242,7 @@ namespace Assignment_07_LINQ
                          select doj).Count();
 
             Console.WriteLine("Displaying total number of employee who have joined after 01/01/2015");
+
             Console.WriteLine("The count of employees who have joined after 1/1/2015 is : {0}", emp10);
             #endregion
 
@@ -244,6 +254,7 @@ namespace Assignment_07_LINQ
                          select AssoEmp).Count();
 
             Console.WriteLine("Display total number of employee whose designation is not “Associate”");
+
             Console.WriteLine("total count of employees whose designation is not Associate is : {0}", emp11);
             #endregion
 
@@ -253,6 +264,7 @@ namespace Assignment_07_LINQ
             var emp15 = Employee.GetEmployee().GroupBy(a => a.city).OrderBy(b => b.Key);
 
             Console.WriteLine("Displaying total number of employee based on city");
+
             foreach (var e15 in emp15)
             {
                 Console.WriteLine("The total count of Employees in the {0} city are : {1}", e15.Key, e15.Count());
@@ -268,6 +280,7 @@ namespace Assignment_07_LINQ
                         select new { city = a.Key.city, title = a.Key.title, count = a.Count() };
 
             Console.WriteLine("Displaying total number of employee based on city and title");
+
             foreach(var e16 in emp16)
             {
                 Console.WriteLine("{0} {1} in {2} office",e16.count,e16.title,e16.city);
@@ -282,6 +295,7 @@ namespace Assignment_07_LINQ
                          select ygEmp).LastOrDefault();
 
             Console.WriteLine("Displaying youngest employee who is  in the list");
+
             Console.WriteLine("The youngest employee  from the list is : {0} {1} DOB : {2}", emp14.FirstName, emp14.LastName, emp14.DOB.Date.ToShortDateString());
             #endregion
 
