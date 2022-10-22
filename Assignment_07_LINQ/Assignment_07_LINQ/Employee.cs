@@ -1,6 +1,5 @@
 ﻿
 #region
-
 /* 1. Create a console application and add class named Employee with following field.
            Employee Class
            EmployeeID (Integer)
@@ -26,8 +25,6 @@
      1009        Suresh      Mistry      Associate        12/08/1992         03/12/2014        Chennai
      1010        Sumit       Shah        Manager          12/04/1991         02/01/2016        Pune             
 
-
-
 // 3. Now once the collection is created write down and execute the LINQ queries for collection as follows :
 
 a. Display detail of all the employee
@@ -47,7 +44,6 @@ n. Display total number of employee based on city and title
 o. Display total number of employee who is youngest in the list          */
 
 #endregion
-
 
 using System;
 using System.Collections.Generic;
@@ -89,12 +85,12 @@ namespace Assignment_07_LINQ
         static void Main(string[] args)
         {
             #region
-            //a.Displaying details of all the employees
+            // a.Displaying details of all the employees
 
             Console.WriteLine("Employee details are : ");
             var emp = from allEmplees in Employee.GetEmployee()
                       select allEmplees;
-
+            Console.WriteLine("Displaying details of all the employees");
             Console.WriteLine("Emp ID \t  FirstName \t  LastName  \t  title  \t  City  \t   DOB \t   DOJ");
 
             foreach (var allEmps in emp)
@@ -104,14 +100,13 @@ namespace Assignment_07_LINQ
             #endregion
 
             #region
-            //b.Displaying details of all the employee whose location is not Mumbai
+            // b.Displaying details of all the employee whose location is not Mumbai
 
             var emp1 = from mumbaiEmp in Employee.GetEmployee()
                       where mumbaiEmp.city != "Mumbai"
                       select mumbaiEmp;
 
-
-            // Console.WriteLine("EmployeeID \t FirstName \t LastName \t\t title \t City \t DOB \tDOJ");
+            Console.WriteLine("Displaying details of all the employee whose location is not Mumbai");
             foreach (var e1 in emp1)
             {
                 //Console.WriteLine(e1.EmployeeID  + e1.FirstName + e1.LastName + e1.title + e1.city + e1.DOB.ToShortDateString() + e1.DOJ.ToShortDateString());
@@ -122,12 +117,15 @@ namespace Assignment_07_LINQ
             #region
             //c.Display details of all the employee whose title is AsstManager
 
-           var emp2 = from assmgr in Employee.GetEmployee()
+            var emp2 = from assmgr in Employee.GetEmployee()
                       where assmgr.title.Equals("AsstManager")
                       select assmgr;
+
+            Console.WriteLine("Displaying details of all the employee whose title is AsstManager");
             foreach (var e2 in emp2)
             {
-                Console.WriteLine("EmployeeID : {0} FirstName : {1}  LastName : {2}    title : {3}  city : {4}  DOB : {5}  DOJ : {6}", e2.EmployeeID, e2.FirstName, e2.LastName, e2.title, e2.city, e2.DOB.ToShortDateString(), e2.DOJ.ToShortDateString());
+                Console.WriteLine("EmployeeID : {0} FirstName : {1}  LastName : {2}    title : {3}  city : {4}  DOB : {5}  DOJ : {6}", 
+                            e2.EmployeeID, e2.FirstName, e2.LastName, e2.title, e2.city, e2.DOB.ToShortDateString(), e2.DOJ.ToShortDateString());
 
             }
             #endregion
@@ -139,6 +137,7 @@ namespace Assignment_07_LINQ
                        where Last_Name.LastName.StartsWith("S")
                        select Last_Name;
 
+            Console.WriteLine("Displaying details of all the employee whose Last Name start with S");
             foreach (var e3 in emp3)
             {
                 Console.WriteLine("EmployeeID : {0} FirstName : {1}  LastName : {2}  title : {3}  city : {4}  DOB : {5}  DOJ : {6}",
@@ -147,12 +146,13 @@ namespace Assignment_07_LINQ
             #endregion
 
             #region
-            // e.Display a list of all the employee who have joined before 1 / 1 / 2015
+            // e. Display a list of all the employee who have joined before 01/01/2015
 
             var emp4 = from doj in Employee.GetEmployee()
                        where doj.DOJ < DateTime.Parse("2015/01/01")
                        select doj;
 
+            Console.WriteLine("Display a list of all the employee who have joined before 01/01/2015");
             foreach (var e4 in emp4)
             {
                 Console.WriteLine("EmployeeID : {0} FirstName : {1}  LastName : {2}  title : {3}  city : {4}  DOB : {5}  DOJ : {6}",
@@ -161,12 +161,13 @@ namespace Assignment_07_LINQ
             #endregion
 
             #region
-            // f.Display a list of all the employee whose date of birth is after 1 / 1 / 1990
+            // f. Display a list of all the employee whose date of birth is after 1 / 1 / 1990
 
             var emp5 = from dob in Employee.GetEmployee()
                        where dob.DOB > DateTime.Parse("1990/01/01")
                        select dob;
 
+            Console.WriteLine("Displaying a list of all the employee whose date of birth is after 01/01/1990");
             foreach (var e5 in emp5)
             {
                 Console.WriteLine("EmployeeID : {0} FirstName : {1}  LastName : {2}  title : {3}  city : {4}  DOB : {5}",
@@ -175,12 +176,13 @@ namespace Assignment_07_LINQ
             #endregion
 
             #region
-            // g.Display a list of all the employee whose designation is Consultant and Associate
+            // g. Display a list of all the employee whose designation is Consultant and Associate
 
             var emp6 = from des in Employee.GetEmployee()
                      where des.title == "Consultant" || des.title == "Associate"
                      select des;
-            
+
+            Console.WriteLine("Displaying a list of all the employee whose designation is Consultant and Associate");           
             foreach (var e6 in emp6)
             {
                 Console.WriteLine("EmployeeID : {0} FirstName : {1}  LastName : {2}  title : {3}",
@@ -189,19 +191,22 @@ namespace Assignment_07_LINQ
             #endregion
 
             #region
-            // h.Display total number of employees
+            // h. Display total number of employees
 
             var emp7 = (from EmpCount in Employee.GetEmployee()
                      select EmpCount.EmployeeID).Count();
-            Console.WriteLine(" The total Count of Employee is : {0}", emp7);
+            Console.WriteLine("Displaying total number of employees");
+            Console.WriteLine("The total Count of Employee is : {0}", emp7);
             #endregion
 
             #region
-            // i.Display total number of employees belonging to “Chennai”
+            // i. Display total number of employees belonging to “Chennai”
 
             var emp8 = from ChennaiEmp in Employee.GetEmployee()
                        where ChennaiEmp.city.Equals("Chennai")
                        select ChennaiEmp;
+
+            Console.WriteLine("Displaying total number of employees belonging to “Chennai”");
 
             foreach (var e8 in emp8)
             {
@@ -211,51 +216,43 @@ namespace Assignment_07_LINQ
             #endregion
 
             #region
-            // j.Display highest employee id from the list
+            // j. Display highest employee id from the list
 
             var emp9 = (from MaxEmpId in Employee.GetEmployee()
                       select MaxEmpId.EmployeeID).Max();
 
+            Console.WriteLine("Display highest employee id from the list");
             Console.WriteLine("The Highest employee id from the list is : {0}", emp9);
-
             #endregion
 
             #region
-            // k.Display total number of employee who have joined after 1 / 1 / 2015
+            // k. Display total number of employee who have joined after 1 / 1 / 2015
 
             var emp10 = (from doj in Employee.GetEmployee()
                          where doj.DOJ > DateTime.Parse("01/01/2015")
                          select doj).Count();
 
+            Console.WriteLine("Displaying total number of employee who have joined after 01/01/2015");
             Console.WriteLine("The count of employees who have joined after 1/1/2015 is : {0}", emp10);
-
             #endregion
 
             #region
-            // l.Display total number of employee whose designation is not “Associate”
+            // l. Display total number of employee whose designation is not “Associate”
 
             var emp11 = (from AssoEmp in Employee.GetEmployee()
                          where AssoEmp.title != "Associate"
                          select AssoEmp).Count();
 
+            Console.WriteLine("Display total number of employee whose designation is not “Associate”");
             Console.WriteLine("total count of employees whose designation is not Associate is : {0}", emp11);
             #endregion
 
             #region
-            // o.Display youngest employee who is  in the list
-
-            var emp14 = (from ygEmp in Employee.GetEmployee()
-                         orderby ygEmp.DOB ascending
-                         select ygEmp).LastOrDefault();
-
-            Console.WriteLine("The youngest employee  from the list is : {0} {1} DOB : {2}", emp14.FirstName, emp14.LastName, emp14.DOB.Date.ToShortDateString());
-            #endregion
-
-            #region
-            // m.Display total number of employee based on city
+            // m. Display total number of employee based on city
 
             var emp15 = Employee.GetEmployee().GroupBy(a => a.city).OrderBy(b => b.Key);
 
+            Console.WriteLine("Displaying total number of employee based on city");
             foreach (var e15 in emp15)
             {
                 Console.WriteLine("The total count of Employees in the {0} city are : {1}", e15.Key, e15.Count());
@@ -263,18 +260,29 @@ namespace Assignment_07_LINQ
             #endregion
 
             #region
-            // n.Display total number of employee based on city and title
+            // n. Display total number of employee based on city and title
 
             var emp16 = from countEmp in Employee.GetEmployee()
                         group countEmp by new { countEmp.city, countEmp.title } into a
                         orderby a.Key.city, a.Key.title
                         select new { city = a.Key.city, title = a.Key.title, count = a.Count() };
 
+            Console.WriteLine("Displaying total number of employee based on city and title");
             foreach(var e16 in emp16)
             {
                 Console.WriteLine("{0} {1} in {2} office",e16.count,e16.title,e16.city);
             }
+            #endregion
 
+            #region
+            // o. Display youngest employee who is  in the list
+
+            var emp14 = (from ygEmp in Employee.GetEmployee()
+                         orderby ygEmp.DOB ascending
+                         select ygEmp).LastOrDefault();
+
+            Console.WriteLine("Displaying youngest employee who is  in the list");
+            Console.WriteLine("The youngest employee  from the list is : {0} {1} DOB : {2}", emp14.FirstName, emp14.LastName, emp14.DOB.Date.ToShortDateString());
             #endregion
 
             Console.ReadKey();
