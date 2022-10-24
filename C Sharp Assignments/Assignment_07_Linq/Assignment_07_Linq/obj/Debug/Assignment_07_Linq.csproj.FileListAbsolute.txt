@@ -1,0 +1,7 @@
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\Assignment_07_Linq\Assignment_07_Linq\bin\Debug\Assignment_07_Linq.exe.config
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\Assignment_07_Linq\Assignment_07_Linq\bin\Debug\Assignment_07_Linq.exe
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\Assignment_07_Linq\Assignment_07_Linq\bin\Debug\Assignment_07_Linq.pdb
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\Assignment_07_Linq\Assignment_07_Linq\obj\Debug\Assignment_07_Linq.csproj.AssemblyReference.cache
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\Assignment_07_Linq\Assignment_07_Linq\obj\Debug\Assignment_07_Linq.csproj.CoreCompileInputs.cache
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\Assignment_07_Linq\Assignment_07_Linq\obj\Debug\Assignment_07_Linq.exe
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\Assignment_07_Linq\Assignment_07_Linq\obj\Debug\Assignment_07_Linq.pdb
