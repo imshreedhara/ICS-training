@@ -2,7 +2,7 @@
 
 Two tables to be created in the database that may be used for the following exercises. Their structure is as follows: 
 
-EMP(empno, ename, job, mgr-id, hiredate, sal, comm., deptno) 
+EMP(empno, ename, job, mgr-id, hiredate, sal, comm, deptno) 
 
 DEPT(deptno, dname, loc) 
 
@@ -29,7 +29,7 @@ EMPNO   ENAME     	  JOB   	MGR-Id   	HIREDATE      	SAL     COMM   DEPTNO
 
 DEPT 
 
-DEPTNO  DNAME        LOC 
+DEPTNO   DNAME         LOC 
 =============================
 10     ACCOUNTING    NEW YORK 
 20     RESEARCH      DALLAS 
