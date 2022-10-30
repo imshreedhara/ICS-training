@@ -1,4 +1,19 @@
 
+/*
+
+1.    Write a T-SQL based procedure Program to generate complete payslip of a given employee with 
+      respect to the following condition
+
+a)    HRA  as 10% Of sal
+b)    DA as  20% of sal
+c)    PF as 8% of sal
+d)    IT as 5% of sal
+e)    Deductions as sum of PF and IT
+f)    Gross Salary as sum of SAL,HRA,DA 
+g)    Net salary as  Gross salary- Deduction      */
+
+---------------------------------------------------------------
+
 create database SQL_CodeTest_1
 
 	create table EMP
@@ -27,19 +42,6 @@ create database SQL_CodeTest_1
 	select * from EMP
 
 -----------------------------------------------------------------------
-/*
-1.    Write a T-SQL based procedure Program to generate complete payslip of a given employee with 
-      respect to the following condition
-
-a)    HRA  as 10% Of sal
-b)    DA as  20% of sal
-c)    PF as 8% of sal
-d)    IT as 5% of sal
-e)    Deductions as sum of PF and IT
-f)    Gross Salary as sum of SAL,HRA,DA 
-g)    Net salary as  Gross salary- Deduction      */
-
----------------------------------------------------------------
 
 --Using PROCEDURE 
 ------------------
@@ -47,67 +49,98 @@ g)    Net salary as  Gross salary- Deduction      */
 Create or alter procedure Empolyee_PaySlip
  as
  begin
-  select EMPNO,ENAME,JOB,SAL,DEPTNO,
-		 (SAL*0.1) as 'HRA',	
-		 (SAL*0.2) as 'DA',	
-		 (SAL*0.08) as 'PF',		
-		 (SAL*0.05) as 'IT',
-		 ((SAL*0.08)+(SAL*0.05)) as 'Deductions',	
-		 (SAL+(SAL*0.1)+(SAL*0.2)) as 'Gross Salary',
-		 ((SAL+(SAL*0.1)+(SAL*0.2))-((SAL*0.08)+(SAL*0.05))) as 'Net salary' from EMP
+   select 
+	EMPNO,
+	ENAME,
+	JOB,
+	SAL,
+	DEPTNO,
+	(SAL*0.1) as 'HRA',	
+	(SAL*0.2) as 'DA',	
+	(SAL*0.08) as 'PF',		
+ 	(SAL*0.05) as 'IT',
+	((SAL*0.08)+(SAL*0.05)) as 'Deductions',	
+	(SAL+(SAL*0.1)+(SAL*0.2)) as 'Gross Salary',
+	((SAL+(SAL*0.1)+(SAL*0.2))-((SAL*0.08)+(SAL*0.05))) as 'Net salary' 
+    from EMP
+
  end
 
  exec Empolyee_PaySlip
 
 ==============================================================================================================
 
---Using transaction OR T_SQL
+--Using transaction OR T-SQL
 --------------------------------
 
 begin transaction 
 
-  select  EMPNO,ENAME,JOB,SAL,DEPTNO,
-		 (SAL*0.1) as 'HRA',	
-		 (SAL*0.2) as 'DA',	(SAL*0.08) as 'PF',		
-		 (SAL*0.05) as 'IT',
-		 ((SAL*0.08)+(SAL*0.05)) as 'Deductions',			 
-		 (SAL+(SAL*0.1)+(SAL*0.2)) as 'Gross Salary',
-		 ((SAL+(SAL*0.1)+(SAL*0.2))-((SAL*0.08)+(SAL*0.05))) as 'Net salary'from EMP
+    select 
+	EMPNO,
+	ENAME,
+	JOB,
+	SAL,
+	DEPTNO,
+	(SAL*0.1) as 'HRA',	
+	(SAL*0.2) as 'DA',	
+	(SAL*0.08) as 'PF',		
+ 	(SAL*0.05) as 'IT',
+	((SAL*0.08)+(SAL*0.05)) as 'Deductions',	
+	(SAL+(SAL*0.1)+(SAL*0.2)) as 'Gross Salary',
+	((SAL+(SAL*0.1)+(SAL*0.2))-((SAL*0.08)+(SAL*0.05))) as 'Net salary' 
+    from EMP
 
  save tran s1
+
  commit
 
-==============================================================================================================
+==================================================================================================================
 
 OUTPUT:
 -------
-7369	SMITH	CLERK		800	20	80.0	160.0	64.00	40.00	104.00	40.00	1040.0	936.00
-7499	ALLEN	SALESMAN	1600	30	160.0	320.0	128.00	80.00	208.00	80.00	2080.0	1872.00
-7521	WARD	SALESMAN	1250	30	125.0	250.0	100.00	62.50	162.50	62.50	1625.0	1462.50
-7566	JONES	MANAGER		2975	20	297.5	595.0	238.00	148.75	386.75	148.75	3867.5	3480.75
-7654	MARTIN	SALESMAN	1250	30	125.0	250.0	100.00	62.50	162.50	62.50	1625.0	1462.50
-7698	BLAKE	MANAGER		2850	30	285.0	570.0	228.00	142.50	370.50	142.50	3705.0	3334.50
+EMPNO	ENAME	 JOB		SAL    DEPNO	HRA      DA      PF      IT    DEDUCTIONS  Gross Salary Net Salary
+===================================================================================================================
+7369	SMITH	CLERK	      800	20	80.0	160.0	64.00	40.00	104.00	     1040.0	 936.00
+7499	ALLEN	SALESMAN     1600	30	160.0	320.0	128.00	80.00	208.00	     2080.0	 1872.00
+7521	WARD	SALESMAN     1250	30	125.0	250.0	100.00	62.50	162.50	     1625.0	 1462.50
+7566	JONES	MANAGER	     2975	20	297.5	595.0	238.00	148.75	386.75	     3867.5	 3480.75
+7654	MARTIN	SALESMAN     1250	30	125.0	250.0	100.00	62.50	162.50	     1625.0	 1462.50
+7698	BLAKE	MANAGER	     2850	30	285.0	570.0	228.00	142.50	370.50	     3705.0	 3334.50
 
-==============================================================================================================
+====================================================================================================================
 
 --Using PROCEDURE with input parameter EMPID
 ---------------------------------------------
 
 Create or alter procedure Empolyee_PaySlip (@eid int)
  as
- begin
-   select EMPNO,ENAME,JOB,SAL,DEPTNO,
-	  (SAL*0.1) as 'HRA',	
-  	  (SAL*0.2) as 'DA',	
-	  (SAL*0.08) as 'PF',		
-	  (SAL*0.05) as 'IT',
-	  ((SAL*0.08)+(SAL*0.05)) as 'Deductions',	
-	  (SAL+(SAL*0.1)+(SAL*0.2)) as 'Gross Salary',
-	  ((SAL+(SAL*0.1)+(SAL*0.2))-((SAL*0.08)+(SAL*0.05))) as 'Net salary' from EMP where empno=@eid
- end
+  begin
+    select 
+	EMPNO,
+	ENAME,
+	JOB,
+	SAL,
+	DEPTNO,
+	(SAL*0.1) as 'HRA',	
+	(SAL*0.2) as 'DA',	
+	(SAL*0.08) as 'PF',		
+ 	(SAL*0.05) as 'IT',
+	((SAL*0.08)+(SAL*0.05)) as 'Deductions',	
+	(SAL+(SAL*0.1)+(SAL*0.2)) as 'Gross Salary',
+	((SAL+(SAL*0.1)+(SAL*0.2))-((SAL*0.08)+(SAL*0.05))) as 'Net salary' 
+     from EMP 
+     where empno=@eid
+  end
 
  exec Empolyee_PaySlip 7566
-===========================================
+
+====================================================================================================================
+
 OUTPUT:
 -------
-7566	JONES	MANAGER		2975	20	297.5	595.0	238.00	148.75	386.75	148.75	3867.5	3480.75
+
+EMPNO	ENAME	 JOB	    SAL    DEPNO	HRA      DA      PF      IT     DEDUCTIONS   Gross Salary  Net Salary
+=====================================================================================================================
+7566	JONES	MANAGER	   2975	    20	 	297.5	595.0	238.00	148.75	  386.75	 3867.5	    3480.75
+
+
