@@ -43,6 +43,48 @@ create database SQL_CodeTest_1
 
 -----------------------------------------------------------------------
 
+Create or alter procedure Empolyee_PaySlip (@eid int)
+ as
+   begin
+	declare @Salary float
+	select @Salary=SAL from EMP where empno=@eid
+	declare @HRA float,
+		@DA float,
+		@PF float,
+		@IT float,
+		@Deductions float,
+		@Gross_Salary float,
+		@Net_Salary float
+
+	set @HRA=@Salary*0.1
+	set @DA=@Salary*0.2
+	set @PF=@Salary*0.08
+	set @IT=@Salary*0.05
+	set @Deductions=@PF+@IT
+	set @Gross_Salary=@Salary+@HRA+@DA
+	set @Net_Salary=@Gross_Salary-@Deductions
+	
+	select  EMPNO,
+		ENAME,
+		JOB,
+		DEPTNO,
+		SAL,
+		@HRA as 'HRA',
+		@DA as 'DA',
+		@PF as 'PF',
+		@IT as 'IT',
+		@Deductions as 'Deductions',
+		@Gross_Salary as 'Gross Salary',
+		@Net_Salary as 'Net Salary' 
+		from EMP 
+		where empno=@eid
+    end
+
+ exec Empolyee_PaySlip 7566
+
+--------------------------------------------------------------------
+
+
 --Using PROCEDURE 
 ------------------
 
