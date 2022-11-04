@@ -1,9 +1,0 @@
-D:\Assignment-06\Assignment-06\obj\Debug\Assignment-06.csproj.AssemblyReference.cache
-D:\Assignment-06\Assignment-06\obj\Debug\Assignment-06.csproj.CoreCompileInputs.cache
-C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Assignment-06\Assignment-06\obj\Debug\Assignment-06.csproj.AssemblyReference.cache
-C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Assignment-06\Assignment-06\obj\Debug\Assignment-06.csproj.CoreCompileInputs.cache
-C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Assignment-06\Assignment-06\bin\Debug\Assignment-06.exe.config
-C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Assignment-06\Assignment-06\bin\Debug\Assignment-06.exe
-C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Assignment-06\Assignment-06\bin\Debug\Assignment-06.pdb
-C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Assignment-06\Assignment-06\obj\Debug\Assignment-06.exe
-C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Assignment-06\Assignment-06\obj\Debug\Assignment-06.pdb

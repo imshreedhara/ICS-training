@@ -1,7 +1,0 @@
-D:\Training Assignments\CodeBasedTest_1\CodeBasedTest_1\bin\Debug\CodeBasedTest_1.exe.config
-D:\Training Assignments\CodeBasedTest_1\CodeBasedTest_1\bin\Debug\CodeBasedTest_1.exe
-D:\Training Assignments\CodeBasedTest_1\CodeBasedTest_1\bin\Debug\CodeBasedTest_1.pdb
-D:\Training Assignments\CodeBasedTest_1\CodeBasedTest_1\obj\Debug\CodeBasedTest_1.csproj.AssemblyReference.cache
-D:\Training Assignments\CodeBasedTest_1\CodeBasedTest_1\obj\Debug\CodeBasedTest_1.csproj.CoreCompileInputs.cache
-D:\Training Assignments\CodeBasedTest_1\CodeBasedTest_1\obj\Debug\CodeBasedTest_1.exe
-D:\Training Assignments\CodeBasedTest_1\CodeBasedTest_1\obj\Debug\CodeBasedTest_1.pdb

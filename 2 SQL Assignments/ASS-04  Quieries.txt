@@ -1,0 +1,81 @@
+
+create database ASS_04
+
+use ass_04
+
+---------------------------------------------------------------------------------------
+
+--1. Write a T-SQL Program to find the factorial of a given number.
+
+		declare @number int=5;
+		declare @factorial int=1;
+
+		while(@number > 1)
+		begin
+			set @factorial = @factorial * @number;
+			set @number = @number - 1;
+		end
+
+		select @factorial as 'Factorial of a given No '
+
+-----------------------------------------------------------------------------------------
+
+--2. Create a stored procedure to generate multiplication tables up to a given number
+
+
+     Create or alter procedure sp_Multiplication_table(@i int,@t int) 
+
+	-- Need to supply 2 inputs ,
+	-- i : Number for which we need Miltiplication Table
+	-- t : till which number need to generate multiplication table
+
+	 as
+	 begin
+		declare @j int
+		set @j= 1; 
+
+		print 'Multipliction table of : ' + CONVERT(VARCHAR, @i) ;
+
+		While (@j <=@t)
+		   	begin
+				print convert(varchar,@i) + ' x ' + convert(varchar, @j)+ ' = ' + convert(varchar, @i*@j)
+				set @j=@j+1;
+			End
+	 End
+
+	exec sp_Multiplication_table 3,20  --- we will get multiplication table of 3, till the number 20
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+-- 3. Create a trigger to restrict data manipulation on EMP table during General holidays.Display the error message 
+--    like “Due to Independence day you cannot manipulate data” or "Due To Diwali", you cannot manupulate" etc.
+
+---   Note: Create holiday table as (holiday_date,Holiday_name) store at least 4 holiday details
+
+	create table Holiday_tbl(holiday_name varchar(20),holiday_date date)
+
+	insert into Holiday_tbl 		 
+			 Values ('Sankranthi','15-jan-22'),
+				('Republic Day','26-Jan-22'),
+				('Independenceday','15-aug-22'),
+				('Gandhi Jayanthi','02-Oct-22'),
+				('Dasara','05-Oct-22')
+
+	select * from Holiday_tbl
+
+	-- drop table Holiday_tbl
+				
+
+	create or alter trigger tr_holiday_tbl_InsteadOf_Insert
+	on 
+	Holiday_tbl
+	instead of insert
+	as
+	begin
+	select 'Due to Sankranthi you cannot manipulate data ' as 'error message'
+	end
+
+	insert into EMP 
+			values('08','shreedhara','30')
+
