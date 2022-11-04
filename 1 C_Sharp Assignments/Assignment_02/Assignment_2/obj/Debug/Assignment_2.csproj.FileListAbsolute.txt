@@ -1,0 +1,15 @@
+D:\ICS DotNet Training Assignments\Assignment_2\Assignment_2\bin\Debug\Assignment_2.exe.config
+D:\ICS DotNet Training Assignments\Assignment_2\Assignment_2\bin\Debug\Assignment_2.exe
+D:\ICS DotNet Training Assignments\Assignment_2\Assignment_2\bin\Debug\Assignment_2.pdb
+D:\ICS DotNet Training Assignments\Assignment_2\Assignment_2\obj\Debug\Assignment_2.csproj.AssemblyReference.cache
+D:\ICS DotNet Training Assignments\Assignment_2\Assignment_2\obj\Debug\Assignment_2.csproj.CoreCompileInputs.cache
+D:\ICS DotNet Training Assignments\Assignment_2\Assignment_2\obj\Debug\Assignment_2.exe
+D:\ICS DotNet Training Assignments\Assignment_2\Assignment_2\obj\Debug\Assignment_2.pdb
+D:\Training Assignments\Assignment_02\Assignment_2\bin\Debug\Assignment_2.exe.config
+D:\Training Assignments\Assignment_02\Assignment_2\bin\Debug\Assignment_2.exe
+D:\Training Assignments\Assignment_02\Assignment_2\bin\Debug\Assignment_2.pdb
+D:\Training Assignments\Assignment_02\Assignment_2\obj\Debug\Assignment_2.csproj.AssemblyReference.cache
+D:\Training Assignments\Assignment_02\Assignment_2\obj\Debug\Assignment_2.csproj.SuggestedBindingRedirects.cache
+D:\Training Assignments\Assignment_02\Assignment_2\obj\Debug\Assignment_2.csproj.CoreCompileInputs.cache
+D:\Training Assignments\Assignment_02\Assignment_2\obj\Debug\Assignment_2.exe
+D:\Training Assignments\Assignment_02\Assignment_2\obj\Debug\Assignment_2.pdb

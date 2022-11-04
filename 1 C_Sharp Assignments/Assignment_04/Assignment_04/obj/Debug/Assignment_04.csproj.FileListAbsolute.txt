@@ -1,0 +1,7 @@
+D:\ICS DotNet Course\Assignment_04\Assignment_04\obj\Debug\Assignment_04.csproj.AssemblyReference.cache
+D:\ICS DotNet Course\Assignment_04\Assignment_04\obj\Debug\Assignment_04.csproj.CoreCompileInputs.cache
+D:\ICS DotNet Course\Assignment_04\Assignment_04\bin\Debug\Assignment_04.exe.config
+D:\ICS DotNet Course\Assignment_04\Assignment_04\bin\Debug\Assignment_04.exe
+D:\ICS DotNet Course\Assignment_04\Assignment_04\bin\Debug\Assignment_04.pdb
+D:\ICS DotNet Course\Assignment_04\Assignment_04\obj\Debug\Assignment_04.exe
+D:\ICS DotNet Course\Assignment_04\Assignment_04\obj\Debug\Assignment_04.pdb

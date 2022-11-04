@@ -1,0 +1,263 @@
+
+
+Assignment-07  (Linq)
+==============================
+1. Create a console application and add class named Employee with following field.
+           Employee Class
+           EmployeeID (Integer)
+           FirstName(String)
+           LastName(String)
+           title(String)
+           DOB(Date)
+           DOJ(Date)
+           city(String)                       
+
+
+2. Create a Generic List Collection empList and populate it with the following records.
+
+    EmployeeID   FirstName   LastName      title             DOB                DOJ             city
+    ===================================================================================================
+     1001        Malcolm     Daruwalla    Manager         16/11/1984         08/06/2011        Mumbai
+     1002        Asdin       Asdin       AsstManager      20/08/1984         07/07/2012        Mumbai
+     1003        Madhavi     Oza         Consultant       14/11/1987         12/04/2015        Pune
+     1004        Saba        Shaikh      SE               03/06/1990         02/02/2016        Pune
+     1005        Nazia       Shaikh      SE               08/03/1991         02/02/2016        Mumbai
+     1006        Amit        Pathak      Consultant       07/11/1989         08/08/2014        Chennai
+     1007        Vijay       Natrajan    Consultant       02/12/1989         01/06/2015        Mumbai
+     1008        Rahul       Dubey       Associate        11/11/1993         06/11/2014        Chennai
+     1009        Suresh      Mistry      Associate        12/08/1992         03/12/2014        Chennai
+     1010        Sumit       Shah        Manager          12/04/1991         02/01/2016        Pune     
+        
+
+// 3. Now once the collection is created write down and execute the LINQ queries for collection as follows :
+
+a. Display detail of all the employee
+b. Display details of all the employee whose location is not Mumbai
+c. Display details of all the employee whose title is AsstManager
+d. Display details of all the employee whose Last Name start with S
+e. Display a list of all the employee who have joined before 1/1/2015
+f. Display a list of all the employee whose date of birth is after 1/1/1990
+g. Display a list of all the employee whose designation is Consultant and Associate
+h. Display total number of employees
+i. Display total number of employees belonging to “Chennai”
+j. Display highest employee id from the list
+k. Display total number of employee who have joined after 1/1/2015
+l. Display total number of employee whose designation is not “Associate”
+m. Display total number of employee based on city
+n. Display total number of employee based on city and title
+o. Display total number of employee who is youngest in the list    
+
+====================================================================================================================================
+
+Code Based Test 1   (17/10/2022)
+=================================
+1. Write a program to find the Sum and the Average points scored by the teams in the IPL. Create a Class called Cricket that has a 
+   function called Pointscalculation(int no_of_matches) that takes no.of matches as input and accepts that many scores from the user. 
+   The function should then display the Average and Sum of the scores.
+  
+   (Hint : Use Collection)
+
+2. Write a class Box that has Length and breadth as its members. Write a function that adds 2 box objects and stores in the 3rd.
+   Create a Test class to execute the above
+
+======================================================================================================================================
+
+Assignment-06
+=====================
+Indexers
+--------------
+1. Create a class called Books with BookName and AuthorName members. Instantiate the class through constructor and also 
+   write a method Display() to display the details. Create an Indexer of Books Object to store 5 books in a class called BookShelf.
+ 
+   Using the indexer method assign values to the books and display the same.
+
+   (Hint : Use Composition. Books object inside BookShelf class)
+
+Structures
+----------------
+2. Create a structure 
+   struct Books 
+   private string title;
+   private string author;
+   private string subject;
+   private int book_id;
+
+Include 2 methods called GetValues() and ShowValues() to accept and display details.
+
+create a Class called TestStructures that invokes the above methods of the structure to accept and display the details of the book
+
+Collections
+-------------------
+
+3. Create a Class called Products with Productid, Product Name, Price. Accept 10 Products, sort them based on the price, and display the sorted Products
+
+4. Create a simple Stationery application to add items and display added items using Generic List collections
+
+
+=================================================================================================================================================
+
+Assignment-05
+=====================
+1. Create an Abstract class Student with  Name, StudentId, Grade as members and also an abstract method Boolean Ispassed(grade) which 
+    takes grade as an input and checks whether student passed the course or not.  
+
+    Create 2 Sub classes Undergraduate and Graduate that inherits all members of the student and overrides Ispassed() method 
+
+    For the UnderGrad class, if the grade is above 70.0, then isPassed returns true, otherwise it returns false. 
+    For the Grad class, if the grade is above 80.0, then isPassed returns true, otherwise returns false.
+------------------------------------------
+
+2. Create an console application to book train tickets. Create a Passanger class with (Name, Age) and write a function called 
+   TicketBooking(int no_of_tickets) that takes no.of tickets to be booked. If the no of tickets is > 2 per booking, 
+   raise an user defined exception, and print "cannot book more than 2 tickets". Else Print  "Ticket Booked Successfully". 
+   Add a Test class to call TicketBooking method by accepting all required details.
+
+------------------------------------------
+3.
+  I. Create a class library Project called Concession. Write a method called CalculateConcession(int age)  that takes age 
+     as an input and calculates concession for travel as below:
+
+	If age<=5 then “Little Champs- Free Ticket” should be displayed
+	If age >60 then calculate 30% concession on the totalfare(Which is a constant Eg:500/-) and Display “ Senior Citizen” + Calculated Fare
+	Else “Print Ticket Booked” + Fare. 
+
+   II. Create a Console application with a Class called Program which has int TotalFare as Constant, Name, Age.  Accept Name, Age from the user and 
+      call the CalculateConcession() function
+
+      (Hint : Add required references)
+----------------------------------------------------
+
+4. Create an Interface IStudent with int StudentId and string Name as Properties, void ShowDetails() as its method.
+
+   Create 2 classes Dayscholar and Resident that implements the interface Properties and Methods. ShowDetails() should show 
+   DaysScholar details and Resident Details accordingly.
+
+
+===============================================================================================================================================
+
+Assignment-04
+===================
+General:
+----------------------
+
+1. Create a Class Program which would be used to accepts two  Strings - FirstName and LastName and 
+   call the static method Display() that displays the first name in one line and the LastName in the second line after converting the same to upper case.
+
+2. Create a Program to count the no. of occurrences of a letter in a given string (for example in a string called “OOPS PROGRAMMING”, O appears 3 times)
+   Hint : Accept a string and also the letter to be counted
+
+Strengthning OOPS:
+---------------------------
+
+3. Create a class called Saledetails which has data members like Salesno,  Productno,  Price, dateofsale, Qty, TotalAmount
+   Create a method called Sales() that takes qty, Price details of the object and updates the TotalAmount as Qty *Price
+   Pass the other information like SalesNo, Productno, Price,Qty and Dateof sale through constructor
+   call the show data method to display the values.
+   Hint : Use This pointer
+
+4. Create a class called Customer with Customerid, Name, Age, Phone,City. Write a constructor with no arguments and 
+   another constructor with all information.
+   Write a method called DisplayCustomer(), which is called directly without any object. Also  include destructor
+
+
+5. Create a class called Scholarship which has int Totalmarks and float fees as fields and 
+   a function Public float Merit(int m, float f) that takes Totalmarks and fees as an input.
+ 
+   If the given marks is >= 70 and <=80, then calculate scholarship amount as 20% of the fees
+   If the given mark is > 80 and <=90, then calculate scholarship amount as 30% of the fees
+   If the given mark is >90, then calculate scholarship amount as 50% of the fees.
+   In all the cases return the Scholarship amount
+
+6. Create a Class called Doctor with RegnNo, Name, Feescharged as Private members. Allow values to be set and also to display the same.
+
+==========================================================================================================================================
+
+Hands On Questions for assign-04
+==========================
+1. Create an Employee class with Empid int, Empname string, Salary float. Pass values to the members through Constructor.
+
+   Create a derived class called ParttimeEmployee with Wages as a data member. Instantiate the base class through the derived class constructor
+
+
+2. Write a Method called ShowEmployee()  in the Parent class that displays employee details
+
+3. Override the ShowEmployee() in the child class and change the code to display Partime Employee Details with wages
+
+=====================================================================================================================================
+
+Assignment-03
+===================
+1. Create a class called Accounts which has data members like Account no, Customer name, Account type, Transaction type (d/w), amount, balance
+	D->Deposit
+	W->Withdrawal
+
+	-write a function that updates the balance depending upon the transaction type
+
+	-If transaction type is deposit call the credit(int amount) function and update balance
+	-If transaction type is withdraw call debit(int amt)function and update balance
+
+	-Pass the other information like Acount no,name,acc type through constructor
+	-call the show data method to display the values.
+
+
+2. Create a class called student which has data members like rollno, name, class, Semester, branch, int [] marks=new int marks [5] (marks of 5 subjects )
+
+	-Pass the details of student like rollno, name, class, SEM, branch in constructor
+	-For marks write a method called GetMarks() and give marks for all 5 subjects
+	-Write a method called displayresult, which should calculate the average marks
+	-If marks of any one subject is less than 35 print result as failed
+	-If marks of all subject is >35 but average is < 50 then also print result as failed
+	-If avg > 50 then print result as passed.
+	-Write a DisplayData() method to display all values.
+
+======================================================================================================================================
+
+Assignment-02
+==================
+ Arrays 
+
+  1. Write a  Program to assign integer values to an array and then print the following
+	a. Average value of Array elements
+	b. Minimum and Maximum value in an array 
+    
+  2.Write a program in C# to accept ten marks and display the following
+	a.Total
+	b.Average
+	c.Minimum marks
+	d.Maximum marks
+	e.Display marks in ascending order
+	f.Display marks in descending order
+
+
+  3.Strings Assignment
+	1.Write a program in C# to accept a word from the user and display the length of it.
+	2.Write a program in C# to accept a word from the user and display the reverse of it. 
+	3.Write a program in C# to accept two words from user and find out if they are same. 
+	4.Write a program in C# to accept a word and to find out whether the given word is a palindrome or not.
+===============================================================================================================================================================
+
+Assignment-01
+=====================
+1. Write a C# Sharp program to accept two integers and check whether they are equal or not.  
+	Test Data :
+	Input 1st number: 5
+	Input 2nd number: 5
+
+	Expected Output : 5 and 5 are equal 
+
+2. Write a C# Sharp program to check whether a given number is positive or negative.  
+	Test Data : 14
+	Expected Output : 14 is a positive number
+ 
+3. Write a C# Sharp program that takes two numbers as input and perform an operation (+,-,*,/) on them and displays the result of that operation.  Test Data
+	Input first number: 20
+	Input operation: -
+	Input second number: 12
+	Expected Output : 20 - 12 = 8
+
+4.Write a program which accepts marks of 5 students for C#,HTML and Sql (3 subjects),calculates the average and prints result as passed or failed
+	If avg < 50 then failed else passed. 
+
+5.Write a program in C# to display temperature in Celsius. Accept the temperature in Fahrenheit.
+
+===============================================================================================================================================================
