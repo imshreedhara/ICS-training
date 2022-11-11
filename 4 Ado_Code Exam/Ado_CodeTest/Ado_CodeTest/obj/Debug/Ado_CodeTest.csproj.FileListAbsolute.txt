@@ -1,0 +1,14 @@
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\Ado_CodeTest\Ado_CodeTest\obj\Debug\Ado_CodeTest.csproj.AssemblyReference.cache
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\Ado_CodeTest\Ado_CodeTest\obj\Debug\Ado_CodeTest.csproj.CoreCompileInputs.cache
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\Ado_CodeTest\Ado_CodeTest\bin\Debug\Ado_CodeTest.exe.config
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\Ado_CodeTest\Ado_CodeTest\bin\Debug\Ado_CodeTest.exe
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\Ado_CodeTest\Ado_CodeTest\bin\Debug\Ado_CodeTest.pdb
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\Ado_CodeTest\Ado_CodeTest\obj\Debug\Ado_CodeTest.exe
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\Ado_CodeTest\Ado_CodeTest\obj\Debug\Ado_CodeTest.pdb
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\4 Ado_Code Exam\Ado_CodeTest\Ado_CodeTest\bin\Debug\Ado_CodeTest.exe.config
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\4 Ado_Code Exam\Ado_CodeTest\Ado_CodeTest\bin\Debug\Ado_CodeTest.exe
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\4 Ado_Code Exam\Ado_CodeTest\Ado_CodeTest\bin\Debug\Ado_CodeTest.pdb
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\4 Ado_Code Exam\Ado_CodeTest\Ado_CodeTest\obj\Debug\Ado_CodeTest.csproj.AssemblyReference.cache
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\4 Ado_Code Exam\Ado_CodeTest\Ado_CodeTest\obj\Debug\Ado_CodeTest.csproj.CoreCompileInputs.cache
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\4 Ado_Code Exam\Ado_CodeTest\Ado_CodeTest\obj\Debug\Ado_CodeTest.exe
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\4 Ado_Code Exam\Ado_CodeTest\Ado_CodeTest\obj\Debug\Ado_CodeTest.pdb

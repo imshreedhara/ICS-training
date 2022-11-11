@@ -1,0 +1,138 @@
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Infinite_CaseStudy_1
+{
+    class MyApp
+    {
+        static void Main(string[] args)
+        {
+            MyApp app = new MyApp();
+
+            app.Scenario_1();
+            app.Scenario_2();
+            app.Scenario_3();
+
+            Console.ReadKey();
+        }
+
+        public void Scenario_1()
+        {
+            // Write a method called as scenario_1 to:
+            // Create few objects of Student class
+            // Call the display method of Info class
+
+            Student std1 = new Student();
+            std1.id = 1;
+            std1.name = "Shreedhara";
+            std1.dateofbirth = Convert.ToDateTime("05/01/1987");
+
+            Student std2 = new Student();
+            std2.id = 2;
+            std2.name = "Niranjan";
+            std2.dateofbirth = Convert.ToDateTime("24/05/1967");
+
+            Student std3 = new Student();
+            std3.id = 3;
+            std3.name = "Kavitha ";
+            std3.dateofbirth = Convert.ToDateTime("30/06/1980");
+
+            Student std4 = new Student();
+            std4.id = 4;
+            std4.name = "Sri Harshini";
+            std4.dateofbirth = Convert.ToDateTime("17/09/1989");
+
+            Info info = new Info();
+            Console.WriteLine("Std_Id \t Name \t\t   DOB");
+            Console.WriteLine("----------------------------------");
+            info.Display(std1);
+            info.Display(std2);
+            info.Display(std3);
+            info.Display(std4);
+        }
+
+        public void Scenario_2()
+        {
+            // Write a method called as scenario_2 to:
+            // Create array of Student class and store few objects in it
+            // Demonstrate how to iterate over the array and call the display method for each student
+
+            Student[] students = new Student[4];
+
+            students[0] = new Student();
+            students[0].id = 11;
+            students[0].name = "Shreedhara";
+            students[0].dateofbirth = Convert.ToDateTime("05/01/1987");
+
+            students[1] = new Student();
+            students[1].id = 12;
+            students[1].name = "Niranjan";
+            students[1].dateofbirth = Convert.ToDateTime("24/05/1967");
+
+            students[2] = new Student();
+            students[2].id = 13;
+            students[2].name = "Kavitha ";
+            students[2].dateofbirth = Convert.ToDateTime("30/06/1980");
+
+            students[3] = new Student();
+            students[3].id = 14;
+            students[3].name = "Sri Harshini";
+            students[3].dateofbirth = Convert.ToDateTime("17/09/1989");
+
+            Info info = new Info();
+            Console.WriteLine("Std_Id \t Name \t\t   DOB");
+            Console.WriteLine("----------------------------------");
+
+            info.Display(students[0]);
+            info.Display(students[1]);
+            info.Display(students[2]);
+            info.Display(students[3]);
+        }
+
+        public void Scenario_3()
+        {
+            //  Write a method called as scenario_3 to:
+            //  Take Student data as input from the user, store it in Student object
+
+            // -Repeat the above process using loops
+
+            // -Use Arrays to store the Student objects as covered in scenario2
+            //- Finally iterate over the array to display all the collected data
+
+            Console.Write("Enter the total number of students : ");
+            int StdCount = Convert.ToInt32(Console.ReadLine());
+
+            Student[] students = new Student[StdCount];
+
+            for (int i = 0; i <= StdCount - 1; i++)
+            {
+                students[i] = new Student();
+
+                Console.Write("Enter the id of student {0} : ", i + 1);
+                int std_Id = Convert.ToInt32(Console.ReadLine());
+                students[i].id = std_Id;
+
+                Console.Write("Enter the Name of student {0} : ", i + 1);
+                string std_Name = Console.ReadLine();
+                students[i].name = std_Name;
+
+                Console.Write("Enter the DOB of Student {0} : ", i + 1);
+                DateTime Std_DOB = Convert.ToDateTime(Console.ReadLine());
+                students[i].dateofbirth = Std_DOB;
+
+                Info info = new Info();
+                info.Display(students[i]);
+
+                //Info info = new Info();
+                //info.Display(students[0]);
+                //info.Display(students[1]);
+                //info.Display(students[2]);
+                //info.Display(students[3]);
+            }
+        }
+    }
+}

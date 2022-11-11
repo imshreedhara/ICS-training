@@ -1,0 +1,37 @@
+
+
+create database Ado_CodeTest
+
+Create table Code_Employee
+	(
+		empno int identity (10,1)primary key,
+		empname varchar(35) not null,                 -- (is a required field)
+		empsal numeric(10,2) check (empsal > 25000),  -- numeric(10,2) - (check empsal >=25000)
+		emptype char(1)				      -- (either 'F' for fulltime or 'P' part time)
+	)  
+
+	-- drop table Code_Employee
+	
+	insert into Code_Employee
+		values	('shreedhara','27000','F'),
+			('Keerthan','26000','P'),
+			('Sri Lakshmi','25500','F'),
+			('Samarth','29000','F'),
+			('Gowrav','31000','P')
+
+	select * from Code_Employee
+
+--------------------------------------------------------------------------------------
+
+	create or alter procedure sp_Insert_Employee
+	(@eName varchar(35), @eSal numeric(10,2), @eType char(1), @eNo int output)
+
+	as 
+	begin
+	insert into Code_Employee values(@eName,@eSal,@eType)
+	select @eNo=SCOPE_IDENTITY()
+	end
+
+	declare @empId int
+	exec sp_Insert_Employee 'Kantharaju','314000','P',@empId output
+	print @empId

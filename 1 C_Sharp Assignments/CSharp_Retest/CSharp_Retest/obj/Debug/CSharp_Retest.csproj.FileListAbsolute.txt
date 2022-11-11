@@ -1,0 +1,7 @@
+C:\Users\shreedharar\source\repos\CSharp_Retest\CSharp_Retest\bin\Debug\CSharp_Retest.exe.config
+C:\Users\shreedharar\source\repos\CSharp_Retest\CSharp_Retest\bin\Debug\CSharp_Retest.exe
+C:\Users\shreedharar\source\repos\CSharp_Retest\CSharp_Retest\bin\Debug\CSharp_Retest.pdb
+C:\Users\shreedharar\source\repos\CSharp_Retest\CSharp_Retest\obj\Debug\CSharp_Retest.csproj.AssemblyReference.cache
+C:\Users\shreedharar\source\repos\CSharp_Retest\CSharp_Retest\obj\Debug\CSharp_Retest.csproj.CoreCompileInputs.cache
+C:\Users\shreedharar\source\repos\CSharp_Retest\CSharp_Retest\obj\Debug\CSharp_Retest.exe
+C:\Users\shreedharar\source\repos\CSharp_Retest\CSharp_Retest\obj\Debug\CSharp_Retest.pdb

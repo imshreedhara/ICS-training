@@ -200,7 +200,8 @@ Assignment-03
 	-call the show data method to display the values.
 
 
-2. Create a class called student which has data members like rollno, name, class, Semester, branch, int [] marks=new int marks [5] (marks of 5 subjects )
+2. Create a class called student which has data members 
+	like rollno, name, class, Semester, branch, int [] marks=new int marks [5] (marks of 5 subjects )
 
 	-Pass the details of student like rollno, name, class, SEM, branch in constructor
 	-For marks write a method called GetMarks() and give marks for all 5 subjects

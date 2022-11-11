@@ -10,7 +10,7 @@ c)    PF as 8% of sal
 d)    IT as 5% of sal
 e)    Deductions as sum of PF and IT
 f)    Gross Salary as sum of SAL,HRA,DA 
-g)    Net salary as  Gross salary- Deduction      */
+g)    Net salary as  Gross salary- Deduction        */
 
 ---------------------------------------------------------------
 
@@ -36,7 +36,7 @@ create database SQL_CodeTest_1
 			(7499,'ALLEN','SALESMAN',7698, '20-FEB-81',1600,300,30),
 			(7521,'WARD','SALESMAN',7698,'22-FEB-81',1250,500,30),
 			(7566,'JONES', 'MANAGER', 7839, '02-APR-81', 2975 , NULL, 20),
-			(7654, 'MARTIN', 'SALESMAN',7698, '28-SEP-81', 1250, 1400,30),
+			(7654,'MARTIN', 'SALESMAN',7698, '28-SEP-81', 1250, 1400,30),
 			(7698,'BLAKE', 'MANAGER',7839, '01-MAY-81', 2850,NULL, 30)
 		
 	select * from EMP
@@ -83,7 +83,6 @@ Create or alter procedure Empolyee_PaySlip (@eid int)
  exec Empolyee_PaySlip 7566
 
 --------------------------------------------------------------------
-
 
 --Using PROCEDURE 
 ------------------
@@ -183,6 +182,6 @@ OUTPUT:
 
 EMPNO	ENAME	 JOB	    SAL    DEPNO	HRA      DA      PF      IT     DEDUCTIONS   Gross Salary  Net Salary
 =====================================================================================================================
-7566	JONES	MANAGER	   2975	    20	 	297.5	595.0	238.00	148.75	  386.75	 3867.5	    3480.75
+7566	JONES	MANAGER	   2975	    20	       297.5	595.0	238.00	148.75	  386.75	 3867.5	    3480.75
 
 
