@@ -13,4 +13,13 @@ namespace Infinite_CaseStudy_2
 
         }
     }
+
+    public class Enroll
+    {
+        private Student student;
+        private Course course;
+        private LocalDate enrollmentDate;
+
+        //constructors & getters/setters
+    }
 }

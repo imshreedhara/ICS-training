@@ -6,7 +6,7 @@ namespace Infinite_CaseStudy_1
     {
         public void Display(Student student)
         {          
-            Console.WriteLine(" {0} \t {1} \t {2}",
+            Console.WriteLine(" {0} \t {1} \t {2} ",
                 student.id,student.name,student.dateofbirth.ToShortDateString());
         }
 

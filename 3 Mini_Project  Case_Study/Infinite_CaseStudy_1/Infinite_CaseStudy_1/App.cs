@@ -20,17 +20,17 @@ namespace Infinite_CaseStudy_1
         }
 
         #region
-
+        
         public void Scenario_1()
         {
-            // Write a method called as scenario_1 to:
-            // Create few objects of Student class
-            // Call the display method of Info class
+            //Writing a method called as scenario_1 to:
+            //Create few objects of Student class
+            //Call the display method of Info class
 
             Student std1 = new Student(1, "Shreedhara", Convert.ToDateTime("05/01/1987"));
             Student std2 = new Student(2, "Niranjan", Convert.ToDateTime("24/05/1967"));
             Student std3 = new Student(3, "Kavitha", Convert.ToDateTime("30/06/1980"));
-            Student std4 = new Student(4, "Sri Harshini", Convert.ToDateTime("17/09/1989"));
+            Student std4 = new Student(4, "SriHarshini", Convert.ToDateTime("17/09/1989"));
 
             Info info = new Info();
             Console.WriteLine("Std_Id \t Name \t\t   DOB");
@@ -63,7 +63,7 @@ namespace Infinite_CaseStudy_1
             students[0] = new Student(11, "Shreedhara", Convert.ToDateTime("05/01/1998"));
             students[1] = new Student(12, "Niranjan", Convert.ToDateTime("24/05/1967"));
             students[2] = new Student(13, "Kavitha", Convert.ToDateTime("17/09/1989"));
-            students[3] = new Student(14, "Sri Harshini", Convert.ToDateTime("17/09/1989"));
+            students[3] = new Student(14, "SriHarshini", Convert.ToDateTime("17/09/1989"));
 
             Info info = new Info();
             Console.WriteLine("Std_Id \t Name \t\t   DOB");
@@ -86,7 +86,7 @@ namespace Infinite_CaseStudy_1
             info.Display(courses[1]);
             info.Display(courses[2]);
         }
-        
+
         public void Scenario_3()
         {
             //  Write a method called as scenario_3 to:
@@ -123,7 +123,7 @@ namespace Infinite_CaseStudy_1
                 }
             }
 
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
 
@@ -158,7 +158,7 @@ namespace Infinite_CaseStudy_1
                     info.Display(courses[i]);
                 }
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
