@@ -1,4 +1,5 @@
 
+
 Case Study Plan  ( namespace: Infinite_CaseStudy_3 )
 --------------------------
 
@@ -6,13 +7,13 @@ Case Study Plan  ( namespace: Infinite_CaseStudy_3 )
 
 - Then the next step is to create user interface for our application.
 
-- Create an abstract class/interface (UserInterface) with the following methods:
+- Create an abstract class/interface ( UserInterface ) with the following methods:
 
 	public void showFirstScreen();
 	public void showStudentScreen();
 	public void showAdminScreen();
 	public void showAllStudentsScreen();
-	public void showStudentRegistrationScreen(); // Execute the register method of AppEngine class
+	public void showStudentRegistrationScreen();  // Execute the register method of AppEngine class
 	public void introduceNewCourseScreen();
 	public void showAllCoursesScreen();
 
@@ -23,7 +24,7 @@ Case Study Plan  ( namespace: Infinite_CaseStudy_3 )
 	public void showFirstScreen() 
 	{
 		Console.WriteLine("Welcome to SMS(Student Mgmt. System) v1.0");
-		Console.WriteLine("Tell us who you are : \n1. Student\n2. Admin");
+		Console.WriteLine("Tell us who you are : \n 1. Student \n 2. Admin");
 		Console.WriteLine("Enter your choice ( 1 or 2 ) : ");
 		int op =Convert.ToInt32(Console.ReadLine());
 		

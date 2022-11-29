@@ -1,0 +1,94 @@
+
+JavaScript Assignment 
+----------------------
+
+1. Write a Javascript program to compute the sum of the given 2 integers. If the 2 values are same, then return triple of their sum
+------------------------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+         <script>
+            function addition()
+              {
+                  const x = parseInt(document.getElementById("n1").value);
+                  const y = parseInt(document.getElementById('n2').value);                  
+                  if (x != y){
+                      const p = parseInt(x+y);
+                      document.write(p);
+              }
+              else{
+                const q = parseInt(3*(x+y))
+                document.write(q);
+              }
+          }
+          </script>
+</head>
+<body>
+    
+1st Number:
+<input type="number" value = "" id="n1"><br>
+2nd Number:
+<input type = "number" value= "" id="n2"><br>
+<input type = "button" value="click here" onclick="addition()">
+</body>
+</html>
+-----------------------------------------------------------------------------------------------------------
+
+2. Write a Javascript program to check whether given 2 integer values are in the range of 50-90(inclusive). 
+   Return true if both of them are in the said range elese false.
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>     
+    function checkNumRange()
+    {
+      let x =parseInt(document.getElementById("n1").value);
+      let y =parseInt(document.getElementById("n2").value);
+    if ((x >= 50 && x <= 90) && (y >= 50 && y <= 90))
+    {
+      document.write("True")
+    }
+    else
+    {
+      document.write("False")
+    }
+  }
+
+</script>
+Enter FirstNumber:
+<input type ="number" value="" id="n1"><br>
+Enter SecondNumber:
+<input type="number" value="" id="n2"><br>
+<input type= "button" value=" click here to check" onclick="return checkNumRange()">
+   </body>
+</html>
+
+-----------------------------------------------------------------------------------------------------------
+
+3. Write a javascript to get the extension of a filename given by the user (hint: use split and pop()) 
+-----------------------------------------------------------
+
+<!--3. Write a javascript to get the extension of a filename given by the user (hint: use split and pop())-->
+
+<!DOCTYPE html>
+<html>
+            <script>
+                function checkFileExtension() {
+                    fileName = document.querySelector('#file').value;
+                    extension = fileName.split('.').pop();
+                    document.querySelector('.output').textContent = extension;
+                };
+            </script>
+
+
+
+   <p>choose a file check Extension</p>
+            <input type="file" id="file" />
+            <input type="button" value="Check Extension" onclick="checkFileExtension();"/>
+        </form>
+       <b><i><p>The File Extension is: <span class="output"></span></p></i></b>
+</html>

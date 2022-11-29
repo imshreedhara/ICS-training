@@ -47,6 +47,5 @@ Case Study Plan  ( namespace: Infinite_CaseStudy_2 )
 
         }
 
-
   - Write App class with main method to test the above functionalities
   - Now modify Info class by adding new methods for displaying Enrollment details

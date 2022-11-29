@@ -1,0 +1,7 @@
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\3 Mini_Project  Case_Study\Infinite_CaseStudy\Infinite_CaseStudy\obj\Debug\Infinite_CaseStudy.csproj.AssemblyReference.cache
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\3 Mini_Project  Case_Study\Infinite_CaseStudy\Infinite_CaseStudy\obj\Debug\Infinite_CaseStudy.csproj.CoreCompileInputs.cache
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\3 Mini_Project  Case_Study\Infinite_CaseStudy\Infinite_CaseStudy\bin\Debug\Infinite_CaseStudy.exe.config
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\3 Mini_Project  Case_Study\Infinite_CaseStudy\Infinite_CaseStudy\bin\Debug\Infinite_CaseStudy.exe
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\3 Mini_Project  Case_Study\Infinite_CaseStudy\Infinite_CaseStudy\bin\Debug\Infinite_CaseStudy.pdb
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\3 Mini_Project  Case_Study\Infinite_CaseStudy\Infinite_CaseStudy\obj\Debug\Infinite_CaseStudy.exe
+C:\Users\shreedharar\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\ICS Training\Training Assignments\3 Mini_Project  Case_Study\Infinite_CaseStudy\Infinite_CaseStudy\obj\Debug\Infinite_CaseStudy.pdb

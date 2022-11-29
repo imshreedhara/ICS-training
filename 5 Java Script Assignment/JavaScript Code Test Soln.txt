@@ -1,0 +1,92 @@
+
+
+1. Write a JS program to calculate multiplication and division of two numbers (input from user)
+--------------------------------------------------------------------------------------------------
+
+<!---Write a JS program to calculate multiplication and division of two numbers (input from user)-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function multiplication() {
+            n1 = document.getElementById("firstNumber").value;
+            n2 = document.getElementById("secondNumber").value;
+            document.getElementById("result").value = n1 * n2;
+        }
+
+        function division() {
+            n1 = document.getElementById("firstNumber").value;
+            n2 = document.getElementById("secondNumber").value;
+            document.getElementById("result").value = n1 / n2;
+        }        
+    </script>
+
+</head>
+
+<body>
+
+    <html>
+
+    <head> 
+        <meta charset=utf-8 />
+        <title>JavaScript program to calculate multiplication and division of two numbers </title>
+        <style type="text/css">
+            body {
+                margin: 30px;
+                background-color: rgb(215, 195, 219);
+            }
+        </style>
+    </head>
+
+    <body>
+        <form>
+            Enter your 1st Number : <input type="text" id="firstNumber" /><br>
+            Enter your 2nd Number: <input type="text" id="secondNumber" /><br>
+            <input type="button" onClick="multiplication()" Value="Multiply" />
+            <input type="button" onClick="division()" Value="Divide" />
+        </form>
+        <p>
+            Please find the Result below : <br>
+            <input type="text" id="result">           
+        </p>
+
+    </html>
+</body>
+
+
+-------------------------------------------------------------------------------------------------------
+
+ 2. Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, 
+    it will check if the current number is odd or even, and display a message to the screen. 
+---------------------------
+
+<!DOCTYPE html>
+<html>
+<head>   
+    <script>
+      function checkOddOrEven(){
+            
+            var str =''
+            for(var i=0;(i<=15);i++)
+            {
+                if(i%2==0)
+                {
+                    str = str+i+"  : is even"+'<br/>';
+                    document.getElementById("ans").innerHTML =str;
+                }
+                else
+                {
+                    str =str+i+" :is odd"+'<br/>';
+                    document.getElementById("ans").innerHTML=  str;
+                }
+            }           
+        }
+    </script>
+</head>
+<body>
+    <span id="ans"></span>
+    <input type="button" value="Check Loop" onclick="checkOddOrEven()">
+</body>
+</html>

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+
+
 using System.Threading.Tasks;
 
 namespace arrayobjects
@@ -27,6 +29,7 @@ namespace arrayobjects
             }
             return sres;
         }
+
         public void accept_student()
         {
             for (int i = 0; i < s.Length; i++)

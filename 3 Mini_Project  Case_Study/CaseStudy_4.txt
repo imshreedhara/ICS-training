@@ -9,7 +9,6 @@ Case Study Day  Plan  ( namespace: Infinite_CaseStudy_4 )
 
   For ex: the code for register method might look like this
  
-
     public void register(Student student) 
 	{
 		Connection con = null;

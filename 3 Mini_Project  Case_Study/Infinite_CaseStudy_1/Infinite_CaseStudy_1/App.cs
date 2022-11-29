@@ -12,9 +12,11 @@ namespace Infinite_CaseStudy_1
         {
             App app = new App();
 
-            app.Scenario_1();
-            app.Scenario_2();
-            //app.Scenario_3();
+            //app.Scenario_1();
+            //Console.WriteLine();
+            //app.Scenario_2();
+            //Console.WriteLine();
+            app.Scenario_3();
 
             Console.ReadKey();
         }
@@ -39,6 +41,8 @@ namespace Infinite_CaseStudy_1
             info.Display(std2);
             info.Display(std3);
             info.Display(std4);
+
+            Console.WriteLine() ;
 
             Course c1 = new Course(101, "CCNA", "80 Hrs", 25000);
             Course c2 = new Course(102, "CCNP", "90 Hrs", 40000);
@@ -73,6 +77,7 @@ namespace Infinite_CaseStudy_1
             info.Display(students[1]);
             info.Display(students[2]);
             info.Display(students[3]);
+            Console.WriteLine();
 
             Course[] courses = new Course[3];
             courses[0] = new Course(101, "CCNA", "80 Hrs", 25000);
@@ -126,13 +131,12 @@ namespace Infinite_CaseStudy_1
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
-
             }
 
             // Taking the Course Details from the User
             try
             {
-                Console.Write("Enter the total number of Courses Available : ");
+                Console.Write("Enter the total number of Courses you want to add : ");
                 int Course_Count = Convert.ToInt32(Console.ReadLine());
 
                 Course[] courses = new Course[Course_Count];
@@ -163,7 +167,8 @@ namespace Infinite_CaseStudy_1
                 Console.WriteLine(e.Message);
             }
         }
-    }  
+
+        #endregion
+    }
 }
 
-#endregion

@@ -1,0 +1,70 @@
+
+
+-- 3. Create a trigger to restrict data manipulation on EMP table during General holidays.Display the error message 
+--    like “Due to Independence day you cannot manipulate data” or "Due To Diwali", you cannot manupulate" etc.
+
+--    Note: Create holiday table as (holiday_date,Holiday_name) store at least 4 holiday details
+
+
+Create table EMP
+	(
+		empno int identity(100,1) primary key,			
+		empname varchar(35) not null,                
+		empsal numeric(10,2) check (empsal > 25000),  
+		emptype char(1)	check (emptype='F' or emptype='P')
+	)  
+
+	-- drop table EMP
+
+-------------------------------------------------------------------------------------------
+	
+	insert into EMP
+		values	('shreedhara','27000','F'),
+				('Keerthan','26000','P'),
+				('Sri Lakshmi','25500','F'),
+				('Samarth','29000','F'),
+				('Gowrav','31000','P')
+
+	select * from EMP
+
+----------------------------------------------------------------------------------
+	
+	create table Holiday_tbl(holiday_date date,holiday_name varchar(20))
+
+	insert into Holiday_tbl 		 
+			 Values ('01-jan-22','New Year'),
+					('26-Jan-22','Republic Day'),
+					('15-aug-22','Independenceday'),
+					('02-Oct-22','Gandhi Jayanthi'),
+					('14-Nov-22','Children day'),
+					('08-Nov-22','Budda Purnima')
+
+	select * from Holiday_tbl
+
+ -- drop table Holiday_tbl
+
+ ------------------------------------------------------------
+				
+	create or alter trigger tr_EMP_tbl_Instead_Of_Trigger
+	on EMP
+	for update,delete,insert
+	as
+	begin
+	declare @Check_Date date
+	declare @Hol_date date
+	set @Check_Date=GETDATE()
+	select @Hol_date=holiday_date from Holiday_tbl
+	if (@Check_Date = @Hol_date )
+	begin
+
+		Raiserror('Due to Holiday you cannot manupulate the EMP data',16,21)
+		select holiday_name from Holiday_tbl where @Check_Date=holiday_date
+	end
+	else
+		print('Data Inserted Sucessfully')
+	end
+
+ --	drop trigger tr_EMP_tbl_InsteadOf_Insert
+
+	insert into EMP 
+			values('Kempe Gowda','30000','P')

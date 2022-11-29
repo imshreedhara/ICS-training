@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>   
+    <script>
+      function checkOddOrEven(){
+            
+            var str =''
+            for(var i=0;(i<=15);i++)
+            {
+                if(i%2==0)
+                {
+                    str = str+i+"  : is even"+'<br/>';
+                    document.getElementById("ans").innerHTML =str;
+                }
+                else
+                {
+                    str =str+i+" :is odd"+'<br/>';
+                    document.getElementById("ans").innerHTML=  str;
+                }
+            }           
+        }
+    </script>
+</head>
+<body>
+    <span id="ans"></span>
+    <input type="button" value="Check Loop" onclick="checkOddOrEven()">
+</body>
+</html>
